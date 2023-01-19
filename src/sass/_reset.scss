@@ -27,3 +27,16 @@ a {
 img {
     display: block;
 }
+
+
+.container {
+    padding: 0 16px;
+}
+
+@media screen and (min-width: 480px) {
+    .container {
+        width: 396px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
