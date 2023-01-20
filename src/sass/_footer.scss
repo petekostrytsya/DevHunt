@@ -8,7 +8,7 @@ p {
   font-size: 18px;
   line-height: 22px;
   text-transform: uppercase;
-  margin-top: 60px;
+  padding-top: 60px;
   margin-bottom: 16px;
   color: #fcfcfc;
 }
@@ -23,17 +23,7 @@ p {
 
   color: #fcfcfc;
 }
-.text-copyright {
-  font-family: var(--primary-font);
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 152%;
-  text-align: center;
-  color: #7a7a7a;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
+
 .footer_body {
   background-color: #84a178;
 }
@@ -64,36 +54,22 @@ p {
   color: #131313;
   margin-bottom: 40px;
 }
-.footer-btn {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  font-family: var(--primary-font);
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 18px;
-  display: flex;
-  align-items: center;
-  color: #131313;
-  outline: none;
-  border: 0 solid transparent;
-  border-radius: 10px;
-  background-color: #f8d24e;
-  margin-bottom: 16px;
-  width: 196px;
-  justify-content: center;
+.footer-phone-number {
+  color: #fcfcfc;
 }
-
 .footer-string {
   display: block;
   border-top: 1px solid #e1e1e1;
   margin: 0;
 }
-.buttons {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.footer-phone-number {
-  color: #FCFCFC;
+.text-copyright {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 152%;
+  text-align: center;
+  color: #7a7a7a;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
