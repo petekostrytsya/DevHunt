@@ -1,12 +1,24 @@
 <footer class="footer_body">
   <div class="container">
-    <button type="button" class="locations_btn">Our Locations</button>
-    <button type="button" class="franchise_btn">Franchise</button>
+    <div class="buttons">
+      <button type="button" class="footer-btn">
+        Our Locations
+        <svg class="contacts__icon" width="12" height="12">
+          <use href="./images/sprite.svg#icon-arrow-right-bold"></use>
+        </svg>
+      </button>
+      <button type="button" class="footer-btn">
+        Franchise
+        <svg class="contacts__icon" width="12" height="12">
+          <use href="./images/sprite.svg#icon-arrow-right-bold"></use>
+        </svg>
+      </button>
+    </div>
+
     <p class="footer_title_first">homemade ice cream made</p>
     <p class="footer_title_secondary">with passion</p>
     <ul class="social-link-list">
-      <li class="social-item ">
-        
+      <li class="social-item">
         <a href="">
           <svg class="social-icon" width="34" height="34">
             <use href="./images/sprite.svg#icon-github"></use>
@@ -14,7 +26,6 @@
         </a>
       </li>
       <li class="social-item">
-        
         <a href="">
           <svg class="social-icon" width="34" height="34">
             <use href="./images/sprite.svg#icon-telegram"></use>
@@ -22,7 +33,6 @@
         </a>
       </li>
       <li class="social-item">
-        
         <a href="">
           <svg class="social-icon" width="34" height="34">
             <use href="./images/sprite.svg#icon-facebook"></use>
@@ -30,11 +40,12 @@
         </a>
       </li>
     </ul>
-    <p>
+    <p class="footer-text-contacts">
       Feel free to contact
-      <a href="tel:+610383766284">+610383766284</a>
+      <a class="footer-phone-number" href="tel:+610383766284">+610383766284</a>
     </p>
-
-    <p class="text-copyright">© 2022 - IceCream. All Rights Reserved.</p>
+    <div class="footer-string">
+      <p class="text-copyright">© 2023 - IceCream. All Rights Reserved.</p>
+    </div>
   </div>
 </footer>
