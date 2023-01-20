@@ -3,6 +3,10 @@
     --secondary-font: 'Seymour One', sans-serif;
 }
 
+body {
+    background-color: #84A178;
+}
+
 h1,
 h2,
 h3,
@@ -30,25 +34,20 @@ img {
 
 
 .container {
-    padding: 0 16px;
-}
+    width: 480px;
+    margin: 0 auto;
+    padding: 0 20px;
 
-@media screen and (min-width: 480px) {
-    .container {
-        width: 396px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+@media screen and (max-width: 479px) {
+    width: 100%;
 }
 
 @media screen and (min-width: 768px) {
-    .container {
-        width: 736px;
-    }
+    width: 768px;
+    padding: 0 32px;
 }
 
 @media screen and (min-width: 1200px) {
-    .container {
-        width: 1158px;
-    }
-}
+    width: 1200px;
+    padding: 0 16px;
+}}
