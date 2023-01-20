@@ -32,6 +32,10 @@
 .about-btn {
     background: #F8D24E;
     border-radius: 10px;
+    border: o;
+    display: inline;
+    width: 164px;
+    height: 42px;
 
     font-family: var(--primary-font);
     font-style: normal;
@@ -42,7 +46,7 @@
 
 .about-btn::after {
     content: ">";
-    background: #000000;
+    
 }
 
 @media screen and (min-width: 768px) {
