@@ -1,3 +1,6 @@
+p {
+  margin: 0;
+}
 .footer_title_first {
   font-family: var(--primary-font);
   font-style: normal;
@@ -5,7 +8,7 @@
   font-size: 18px;
   line-height: 22px;
   text-transform: uppercase;
-
+  margin-bottom: 16px;
   color: #fcfcfc;
 }
 .footer_title_secondary {
@@ -27,7 +30,7 @@
   line-height: 152%;
   text-align: center;
   color: #7a7a7a;
-  margin-top: 12px;
+  padding-top: 20px;
   padding-bottom: 20px;
 }
 .footer_body {
@@ -58,6 +61,7 @@
   line-height: 186%;
   text-align: right;
   color: #131313;
+  margin-bottom: 40px;
 }
 .footer-btn {
   padding-top: 12px;
@@ -82,10 +86,12 @@
 .footer-string {
   display: block;
   border-top: 1px solid #e1e1e1;
+  margin: 0;
 }
 .buttons {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 .footer-phone-number {
