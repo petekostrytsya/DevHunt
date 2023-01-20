@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-.list {
+.hero-list {
   display: flex;
   list-style: none;
   padding: 0px;
@@ -44,7 +44,7 @@ h1 span {
   font-size: 33px;
 }
 
-.btn-products {
+.hero-btn-products {
   display: inline-block;
   margin-right: 12px;
   padding: 11px 26px;
@@ -59,12 +59,12 @@ h1 span {
   text-decoration: none;
 }
 
-.btn-products:hover,
-.btn-products:focus {
+.hero-btn-products:hover,
+.hero-btn-products:focus {
   border: 2px solid #0a8817;
 }
 
-.btn-how {
+.hero-btn-how {
   display: inline-block;
   border: none;
   text-decoration: none;
@@ -79,15 +79,15 @@ h1 span {
   text-underline-offset: 2px;
 }
 
-.btn-how:hover {
+.hero-btn-how:hover {
   color: #0a8817;
 }
 
-.btn-how:focus {
+.hero-btn-how:focus {
   color: #fcfcfc;
 }
 
-.article {
+.hero-article {
   display: none;
   width: 139px;
   margin-left: 184px;
@@ -98,7 +98,7 @@ h1 span {
   color: #fcfcfc;
 }
 
-.ice-cream {
+.hero-ice-cream {
   position: absolute;
   width: 218px;
   height: 267px;
@@ -113,7 +113,7 @@ h1 span {
   animation-name: fadeIn;
 }
 
-.krapki-left {
+.hero-dots-left {
   position: absolute;
   bottom: 0px;
   left: 159px;
@@ -127,7 +127,7 @@ h1 span {
   animation-name: fadeIn;
 }
 
-.krapki-right {
+.hero-dots-right {
   position: absolute;
   bottom: 0px;
   right: 0px;
@@ -141,7 +141,7 @@ h1 span {
   animation-name: fadeIn;
 }
 
-.plate {
+.hero-plate {
   display: none;
   -webkit-animation-duration: 5s;
   animation-duration: 5s;
@@ -151,12 +151,12 @@ h1 span {
   animation-name: fadeIn;
 }
 
-.arrow {
+.hero-arrow {
   position: absolute;
   display: none;
 }
 
-.left-tablet {
+.hero-left-tablet {
   position: absolute;
   display: none;
   -webkit-animation-duration: 5s;
@@ -167,12 +167,12 @@ h1 span {
   animation-name: fadeIn;
 }
 
-.info {
+.hero-info {
   position: absolute;
   display: none;
 }
 
-.all-dots {
+.hero-all-dots {
   position: absolute;
   display: none;
   -webkit-animation-duration: 5s;
@@ -200,11 +200,11 @@ h1 span {
     margin: 0px 0px 24px 0px;
   }
 
-  .btn-products {
+  .hero-btn-products {
     margin-bottom: 39px;
   }
 
-  .plate {
+  .hero-plate {
     display: block;
     position: absolute;
     left: 32px;
@@ -214,53 +214,53 @@ h1 span {
     z-index: 10;
   }
 
-  .krapki-left {
+  .hero-dots-left {
     display: none;
   }
 
-  .left-tablet {
+  .hero-left-tablet {
     display: block;
     bottom: 0;
     left: 0;
     width: 110.14px;
   }
 
-  .krapki-right {
+  .hero-dots-right {
     width: 182.24px;
   }
 
-  .ice-cream {
+  .hero-ice-cream {
     width: 268px;
     height: 329px;
     bottom: 0px;
     right: 92px;
   }
 
-  .article {
+  .hero-article {
     display: block;
   }
 
-  .arrow {
+  .hero-arrow {
     display: block;
     left: 216px;
     bottom: 24px;
   }
 
-  .info {
+  .hero-info {
     right: 32px;
     top: 14px;
     display: flex;
     flex-direction: column;
   }
 
-  .info li {
+  .hero-info li {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
   }
 
-  .title-info {
+  .hero-title-info {
     padding-bottom: 4px;
     font-family: var(--primary-font);
     font-weight: 900;
@@ -272,7 +272,7 @@ h1 span {
     color: #131313;
   }
 
-  .text-info {
+  .hero-text-info {
     font-family: var(--primary-font);
     font-size: 8px;
     line-height: 10px;
@@ -280,7 +280,7 @@ h1 span {
     color: #fcfcfc;
   }
 
-  .info li {
+  .hero-info li {
     margin-bottom: 20px;
   }
 }
@@ -309,7 +309,7 @@ h1 span {
     margin-bottom: 28px;
   }
 
-  .btn-products {
+  .hero-btn-products {
     font-size: 14px;
     line-height: 18px;
     padding: 12px 34px;
@@ -318,30 +318,30 @@ h1 span {
     border-radius: 10px;
   }
 
-  .btn-products:focus {
+  .hero-btn-products:focus {
     color: #fcfcfc;
   }
 
-  .btn-how {
+  .hero-btn-how {
     font-size: 14px;
     line-height: 17px;
   }
 
-  .article {
+  .hero-article {
     margin-left: 241px;
     width: 200px;
     font-size: 14px;
     line-height: 140%;
   }
 
-  .plate {
+  .hero-plate {
     left: 16px;
     bottom: 65px;
     width: 225px;
     height: 225px;
   }
 
-  .all-dots {
+  .hero-all-dots {
     display: block;
     position: absolute;
     bottom: 0;
@@ -349,40 +349,40 @@ h1 span {
     right: 0;
   }
 
-  .left-tablet,
-  .krapki-left,
-  .krapki-right {
+  .hero-left-tablet,
+  .hero-dots-left,
+  .hero-dots-right {
     display: none;
   }
 
-  .ice-cream {
+  .hero-ice-cream {
     bottom: 0px;
     right: 92px;
     width: 456px;
     height: 560px;
   }
 
-  .info {
+  .hero-info {
     right: 16px;
     top: 8px;
   }
 
-  .title-info {
+  .hero-title-info {
     font-size: 46px;
     line-height: 56px;
   }
 
-  .text-info {
+  .hero-text-info {
     font-size: 14px;
     line-height: 17px;
   }
 
-  .arrow {
+  .herro-arrow {
     bottom: 103px;
     left: 257px;
   }
 
-  .info li {
+  .hero-info li {
     margin-bottom: 16px;
   }
 }
