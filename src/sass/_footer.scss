@@ -68,7 +68,7 @@ p {
 }
 .social-icon:hover,
 .social-icon:focus {
-  fill: #FCFCFC;
+  fill: #fcfcfc;
 }
 .social-link-list {
   display: flex;
@@ -140,15 +140,15 @@ p {
   }
 }
 .footer-title {
-  @media screen and (min-width:768px){
+  @media screen and (min-width: 768px) {
     margin-bottom: 32px;
   }
-  @media screen and (min-width:1200px){
+  @media screen and (min-width: 1200px) {
     margin-bottom: 60px;
   }
 }
 .footer {
-  @media screen and (min-width:768px){
+  @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -158,10 +158,10 @@ p {
   @media screen and (max-width: 767px) {
     margin-top: 60px;
   }
-  @media screen and (min-width:768px){
+  @media screen and (min-width: 768px) {
     margin-bottom: 60px;
   }
-  @media screen and (min-width:1200px){
+  @media screen and (min-width: 1200px) {
     margin-bottom: 60px;
   }
 }
