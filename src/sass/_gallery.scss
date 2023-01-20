@@ -1,0 +1,85 @@
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    ul,
+    ol {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 0;
+        list-style: none;
+    }
+
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .visual-hidden {
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        margin: -1px;
+    }
+
+    /* .container {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    margin-left: auto;
+                    margin-right: auto;
+                } */
+
+    /* .grennbg{
+    background-color: ;
+} */
+    .whitebg {
+        background-image: url("../images/background/mob-bg-@1x-581.jpg");
+        min-Width: 320px;
+        min-Height: 1037px;
+        margin-left: auto;
+        margin-right: auto;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .gallery {
+        padding-top: 11%;
+        background-color: #84A178;
+        position: relative;
+        width: 100%;
+    }
+
+    .gallery-img {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        top: 0px;
+        left: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+
+    }
+
+    .gallery-img img {
+        border-radius: 24px;
+    }
