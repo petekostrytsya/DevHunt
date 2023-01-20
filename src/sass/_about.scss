@@ -1,3 +1,19 @@
+
+
+.about {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .about-lable {
     font-family: var(--primary-font);
     font-weight: 700;
@@ -17,6 +33,14 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #FCFCFC;
+
+    width: 210px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-list {
+    width: 220px;
 }
 
 .about-list-paragraph {
@@ -32,8 +56,9 @@
 .about-btn {
     background: #F8D24E;
     border-radius: 10px;
-    border: o;
+    border: 0px;
     display: inline;
+    text-align: center;
     width: 164px;
     height: 42px;
 
@@ -42,12 +67,19 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 1.29;
+
+    margin-top: 24px;
 }
 
 .about-btn::after {
     content: ">";
-    
 }
+
+.about-picture {
+    margin-top: 32px;
+    margin-bottom: 40px;
+
+   }
 
 @media screen and (min-width: 768px) {
 .about-lable {
