@@ -20,17 +20,36 @@
       </li>
       <li class="about-list-item">
         <p class="about-list-paragraph">
-          This is enough to choose ice cream and  coffee for any mood!
+          This is enough to choose ice cream and coffee for any mood!
         </p>
       </li>
       <li class="about-list-item">
         <button class="about-btn" type="button">Read more</button>
       </li>
     </ul>
-    <img
-  srcset="./images/about_cow_mob.png 1x, ./images/about_cow_mob@2x.png 2x"
-  src="./images/about_cow_mob.png"
-  alt="a cow grazes in the field"
-/>
+    <picture>
+      <source
+        srcset="
+          ./images/about_cow_desk.png    1x,
+          ./images/about_cow_desk@2x.png 2x
+        "
+        type="image/png"
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="
+          ./images/about_cow_tablet.png    1x,
+          ./images/about_cow_tablet@2x.png 2x
+        "
+        type="image/png"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="./images/about_cow_mob.png 1x, ./images/about_cow_mob@2x.png 2x"
+        type="image/png"
+        media="(min-width: 320px)"
+      />
+      <img src="./images/about_cow_mob.png" alt="a cow grazes in the field" />
+    </picture>
   </div>
 </section>
