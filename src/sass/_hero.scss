@@ -1,0 +1,37 @@
+.section-hero {
+  outline: 1px solid red;
+  padding-top: 50px;
+  padding-left: 20px;
+  background-color: #84a178;
+}
+
+.hero h1 {
+  width: 247px;
+  margin-bottom: 32px;
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 33px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #fcfcfc;
+}
+
+.btn-hero {
+  text-transform: uppercase;
+  width: 108px;
+  height: 38px;
+  border: 2px solid #f8d24e;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.1875;
+  color: var(--btn-studio-text);
+  background-color: var(--btn-studio-background);
+
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 0.04em;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
