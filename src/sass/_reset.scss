@@ -1,3 +1,8 @@
+:root {
+    --primary-font: 'Montserrat', sans-serif;
+    --secondary-font: 'Seymour One', sans-serif;
+}
+
 h1,
 h2,
 h3,
@@ -22,3 +27,23 @@ a {
 img {
     display: block;
 }
+
+
+.container {
+    width: 480px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+@media screen and (max-width: 479px) {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    width: 768px;
+    padding: 0 32px;
+}
+
+@media screen and (min-width: 1200px) {
+    width: 1200px;
+    padding: 0 16px;
+}}
