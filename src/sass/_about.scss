@@ -118,7 +118,7 @@ height: 12pt;
     font-weight: 800;
     font-size: 22px;
     line-height: 1.23;
-    letter-spacing: 0.04em;;
+    letter-spacing: 0.04em;
        }
 
 .about-title {
@@ -135,6 +135,8 @@ height: 12pt;
     line-height: 1.75;
     text-align: left;
     width: 334px;
+    margin-top: 0;
+    margin-bottom: 0;
         }
 
 .about-list {
@@ -147,6 +149,15 @@ height: 12pt;
     flex-direction: row;
     align-items: center;
    gap: 38px;
+   }
+
+   .about-picture {
+       margin-top: 32px;
+       margin-bottom: 40px;
+       width: 330px;
+       height: 356px;
+       background-image: url(../images/background/about-bg/about-picture-bg-768.png);
+       padding-top: 39px;
    }
 }
 
@@ -166,13 +177,20 @@ height: 12pt;
 .about-list-paragraph {
     font-weight: 400;
     font-size: 16px;
-    margin-top: 0;
-    margin-bottom: 0;
-
     width: 463px;
     }
       
 .about-tablet-position {
     gap: 109px;
+}
+
+.about-picture {
+    margin-top: 32px;
+    margin-bottom: 40px;
+    width: 490px;
+    height: 529px;
+    background-image: url(../images/background/about-bg/about-picture-bg-1200.png);
+   
+    padding-top: 39px;
 }
    }
