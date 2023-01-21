@@ -4,7 +4,8 @@
 }
 
 body {
-    background-color: #84A178;
+    //background-color: #84A178;
+    background-color: #fff;
 }
 
 h1,
@@ -37,6 +38,7 @@ img {
     width: 480px;
     margin: 0 auto;
     padding: 0 20px;
+    background-color: #84A178;
 
 @media screen and (max-width: 479px) {
     width: 100%;
