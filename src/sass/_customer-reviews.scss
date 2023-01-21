@@ -1,31 +1,74 @@
-.swiper {
-    width: 100%;
-    height: 100%;
-}
+    .visual-hidden {
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        margin: -1px;
+    }
 
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
 
-     /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-}
+    .customer {
+        border-radius: 50%;
+        width: 85px;
+        height: 85px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
 
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+    .review {
+        padding-top: 80px;
+        align-items: center;
+    }
+
+    .review-text {
+        margin-top: 32px;
+        margin-bottom: 0px;
+        padding: 35px 39px;
+        width: 202px;
+        max-height: 186px;
+
+        background-color: #84A178;
+        margin-left: auto;
+        margin-right: auto;
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 2.55;
+        color: #FCFCFC;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .cusomer-name {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-top: 32px;
+        margin-bottom: 34px;
+        font-family: Montserrat;
+        font-style: Regular;
+        font-size: 20px;
+        line-height: 1.85;
+        text-align: center;
+        color: #131313;
+    }
+
+    span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+        background-color: #84A178;
+    }
+
+    @media screen and (min-width: 1200px) {
+
+        .review-text {
+            padding: 43px 109px;
+            width: 750px;
+            max-height: 52px;
+        }
+    }
