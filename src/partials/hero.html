@@ -20,8 +20,15 @@
         tempor incididunt ut labore et
       </p>
       <img
-        src="./images/hero/ice-cream 480.svg"
-        alt="Big ice cream"
+        srcset="
+          ./images/Hero/ice-cream-mobile.svg  218w,
+          ./images/Hero/ice-cream-tablet.svg  268w,
+          ./images/Hero/ice-cream-desktop.svg 480w
+        "
+        sizes="(min-width: 1200px) 480px, (min-width: 768px) 268px, 218px"
+        src="./images/Hero/ice-cream-desktop.svg"
+        alt="Big ice
+                  cream"
         class="hero-ice-cream"
       />
       <img src="./images/hero/left 480.svg" alt="Dots" class="hero-dots-left" />
@@ -45,7 +52,9 @@
         alt="Dots"
         class="hero-all-dots"
       />
-      <img src="./images/hero/Arrow.svg" alt="Arrow" class="hero-arrow" />
+      <svg width="40" height="16" class="hero-arrow">
+        <use href="./images/sprite.svg#icon-arrow-right"></use>
+      </svg>
     </div>
   </div>
 </section>

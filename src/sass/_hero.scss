@@ -11,6 +11,7 @@
 }
 
 .hero {
+  background-color: #0a8817;
   min-width: 480px;
   padding-top: 40px;
 }
@@ -154,6 +155,7 @@ h1 span {
 .hero-arrow {
   position: absolute;
   display: none;
+  fill: rgba(252, 252, 252, 1);
 }
 
 .hero-left-tablet {
@@ -377,7 +379,7 @@ h1 span {
     line-height: 17px;
   }
 
-  .herro-arrow {
+  .hero-arrow {
     bottom: 103px;
     left: 257px;
   }
