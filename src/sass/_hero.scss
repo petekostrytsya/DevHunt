@@ -105,36 +105,45 @@ h1 span {
   bottom: 0px;
   right: 20px;
   z-index: 3;
-  -webkit-animation-duration: 5s;
-  animation-duration: 5s;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
 }
 
-.hero-dots-left {
+.hero-dots-mobile {
   position: absolute;
   bottom: 0px;
-  left: 159px;
-  width: 110.31px;
+  right: 0;
+  width: 330px;
   z-index: 2;
-  -webkit-animation-duration: 5s;
-  animation-duration: 5s;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
 }
 
-.hero-dots-right {
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  width: 130.5px;
+.hero-dots-tablet {
   z-index: 1;
-  -webkit-animation-duration: 5s;
-  animation-duration: 5s;
+  position: absolute;
+  display: none;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+.hero-all-dots {
+  position: absolute;
+  display: none;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fadeIn;
@@ -143,8 +152,8 @@ h1 span {
 
 .hero-plate {
   display: none;
-  -webkit-animation-duration: 5s;
-  animation-duration: 5s;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fadeIn;
@@ -157,31 +166,9 @@ h1 span {
   fill: rgba(252, 252, 252, 1);
 }
 
-.hero-left-tablet {
-  position: absolute;
-  display: none;
-  -webkit-animation-duration: 5s;
-  animation-duration: 5s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
-}
-
 .hero-info {
   position: absolute;
   display: none;
-}
-
-.hero-all-dots {
-  position: absolute;
-  display: none;
-  -webkit-animation-duration: 5s;
-  animation-duration: 5s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
 }
 
 /* ============TABLET========== */
@@ -215,19 +202,15 @@ h1 span {
     z-index: 10;
   }
 
-  .hero-dots-left {
+  .hero-dots-mobile {
     display: none;
   }
 
-  .hero-left-tablet {
+  .hero-dots-tablet {
     display: block;
+    width: 100%;
     bottom: 0;
     left: 0;
-    width: 110.14px;
-  }
-
-  .hero-dots-right {
-    width: 182.24px;
   }
 
   .hero-ice-cream {
@@ -342,9 +325,15 @@ h1 span {
     height: 225px;
   }
 
+  .hero-dots-mobile,
+  .hero-dots-tablet {
+    display: none;
+  }
+
   .hero-all-dots {
     display: block;
     position: absolute;
+    width: 100%;
     bottom: 0;
     left: 0;
     right: 0;
