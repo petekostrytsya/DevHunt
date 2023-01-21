@@ -1,0 +1,21 @@
+html {
+
+  cursor: url('../images/cursor/cursor-auto-@1x.webp'), url('../images/cursor/cursor-auto-@1x.png'), auto;
+
+  @media screen and (min-device-pixel-ratio:2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+
+      cursor: url('../images/cursor/cursor-auto-@2x.webp'), url('../images/cursor/cursor-auto-@2x.png'), auto;
+  }
+}
+
+
+a {
+
+  cursor: url('../images/cursor/cursor-pointer-@1x.webp'),url("../images/cursor/cursor-pointer-@1x.png"), auto;
+
+  @media screen and (min-device-pixel-ratio:2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+
+      cursor: url('../images/cursor/cursor-pointer-@2x.webp'),url("../images/cursor/cursor-pointer-@2x.png"), auto;
+    }
+
+}
