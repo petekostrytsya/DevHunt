@@ -1,72 +1,222 @@
-/* style overlay*/
-.overlay {
-  opacity: 0;
-  visibility: hidden;
 
-  position: fixed;
-  top: 0;
+.modal-title {
+  @media screen and (max-width: 767.99px) {
+    max-width: 145px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+    // @media screen and (min-width: 767767.99px) {
+    //   max-width: 145px;
+    //   margin-left: auto;
+    //   margin-right: auto;
+    // }
+  
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.modal-img-container {
+  position: relative;
+  // display: flex;
+  // align-items: center;
+  // text-align: center;
+  // justify-content: center;
+  margin: auto;
+  margin-top: 27px;
+  border-radius: 50%;
+  max-width: 132px;
+  max-height: 132px;
+  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7)), #D9D9D9;
+  box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+}
+
+.modal-img-product {
+  position:relative;
+  top: -7px;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, .5);
-  z-index: 20;
-  transition: 1.3s all;
+  border-radius: 50%;
 }
 
-/* style modal windows*/
-.modal {
-  opacity: 0;
-  visibility: hidden;
-  /*  Установаем ширину окна  */
-  width: 100%;
-  max-width: 500px;
+.modal-nutritional-value-list {
+  display: flex;
+  @media screen and (max-width:280px) {
+    flex-wrap: wrap;
+    row-gap: 9px;
+  }
+  // flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 22px;
+  column-gap: 9px;
+}
 
-  /*  Центрируем и задаем z-index */
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 30;
-  /* Должен быть выше чем у подложки*/
+.modal-nutritional-value-item {
+  // display: flex;
+  // text-align: center;
+  width: 53px;
+  border: 2px solid #9CBE8F;
+  border-radius: 40px;
+}
 
-  /*  Побочные стили   */
-  box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2);
+.modal-value-container {
+  display:inline-flex;
+  align-items: center;
   text-align: center;
-  padding: 30px;
-  border-radius: 3px;
-  background-color: #fff;
-  transition: 1.3s all;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
+
+  background: #9CBE8F;
+  border: 2px solid #9CBE8F;
+  border-radius: 50%;
+  box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+
 }
 
-/* Стили для активных классов подложки и окна */
-.modal.active,
-.overlay.active {
-  opacity: 1;
-  visibility: visible;
+.modal-nutritional-value-unit{
+  margin: 8px auto;
+  font-family: 'Montserrat';
+  font-size: 10px;
+  line-height: 1.2;
+  
+  color: #131313;
 }
 
-/* Стили для кнопки закрытия */
-.modal__cross {
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  fill: #444;
+.modal-ingredients{
+  margin: 40px auto;
+}
+
+.modal-ingredients-title {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
+  
+  color: #131313;
+}
+
+.modal-ingredients-item{
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-ingredients-item:first-child {
+  margin-top: 24px;
+}
+
+.modal-ingredients-item:not(last-child){
+  margin-bottom: 11px;
+}
+
+// .modal-customer-form-label{
+//   width: 100%;
+// }
+
+.modal-customer-form-input,
+.modal-customer-form-textarea {
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  color: #000000;
+}
+
+// .modal-customer-form-label-wrapper{
+//   padding: 11px;
+// }
+
+.modal-customer-form-label:not(first-child) {
+  margin-top: 16px;
+}
+
+.modal-customer-form-textarea {
+  height: 84px;
+}
+
+.modal-submit-button{
+  margin: 24px auto 28px auto;
+  width: 132px;
+  height: 42px;
+
+  font-family: 'Montserrat';
+    // font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2143;
+  color: #131313;
+
+  background: #F8D24E;
+  border-radius: 10px;
+  border: 0;
+
+  transition: background-color var(--transition-dur-and-timing-fun),
+      color var(--transition-dur-and-timing-fun);
+  -webkit-transition: background-color var(--transition-dur-and-timing-fun),
+      color var(--transition-dur-and-timing-fun);
+  -moz-transition: background-color var(--transition-dur-and-timing-fun),
+      color var(--transition-dur-and-timing-fun);
+  
+}
+
+.modal-submit-button:hover {
+  background-color: #0A8817;
   cursor: pointer;
 }
 
-// /* Стили для кнопок. */
-// .btn {
-//   padding: 20px;
-//   display: inline-block;
-//   text-decoration: none;
-//   background-color: #414b52;
-//   margin: 10px;
-//   color: #fff;
-//   border-radius: 3px;
+.modal-submit-button:active {
+  background-color: #0A8817;
+  border: 0;
+  color: #FFFFFF;
+}
+
+.modal-submit-button.disabled,
+.modal-submit-button.disabled:hover {
+  background-color: #ABABAB;
+  color: #000000;
+  cursor: default;
+}
+
+
+//*******************
+// .form_box .req:invalid {
+//   border: 2px solid red;
 // }
 
-.container {
-  background-color: #fcfcfc;
-}
+// .form_box .req:valid {
+//   border: 2px solid green;
+// }
+
+// .form_box input:focus {
+//   outline: none;
+//   border-color: #07a6e6;
+// }
+
+// .form_box .btn_submit {
+//   border: none;
+//   width: 180px;
+//   text-align: center;
+//   background: #07a6e6;
+//   font-size: 13px;
+//   font-weight: bold;
+//   color: #ffffff;
+//   cursor: pointer;
+//   height: 35px;
+//   line-height: 28px;
+//   padding: 0;
+// }
+
+// .form_box .btn_submit:hover {
+//   background: #009ac2;
+// }
+
+// .form_box .btn_submit:active {
+//   box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.2);
+// }
+
+// .form_box .btn_submit.disabled,
+// .form_box .btn_submit.disabled:hover {
+//   background: #afdde6;
+//   cursor: default;
+// }
+//**************************
