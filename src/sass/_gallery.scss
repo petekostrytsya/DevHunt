@@ -79,15 +79,24 @@
     .gallery {
         padding-left: 20px;
         padding-right: 20px;
+        padding-top: 32px;
     }
 
-    /* -desctop- */
-    @media screen and (min-width: 1200px) {
-        .icecream {
-            border-radius: 24px;
-        }
-        .gallery {
-            padding-left: 93px;
-            padding-right: 93px;
-        }
+@media screen and (min-width: 768px; ) {
+    .gallery {
+        padding-top: 60px;
     }
+}
+
+/* -desctop- */
+@media screen and (min-width: 1200px) {
+    .icecream {
+        border-radius: 24px;
+    }
+
+    .gallery {
+        padding-left: 93px;
+        padding-right: 93px;
+        padding-top: 80px;
+    }
+}

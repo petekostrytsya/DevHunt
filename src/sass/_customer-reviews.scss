@@ -51,7 +51,7 @@
         padding-top: 0px;
         padding-bottom: 0px;
         margin-top: 32px;
-        margin-bottom: 34px;
+        margin-bottom: 30px;
         font-family: Montserrat;
         font-style: Regular;
         font-size: 20px;
@@ -64,11 +64,19 @@
         background-color: #84A178;
     }
 
-    @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
 
-        .review-text {
-            padding: 43px 109px;
-            width: 750px;
-            max-height: 52px;
-        }
+    .review-text {
+        padding: 43px 109px;
+        width: 750px;
+        max-height: 52px;
     }
+
+    .review {
+        padding-top: 100px;
+    }
+
+    .cusomer-name {
+        margin-bottom: 50px;
+    }
+}
