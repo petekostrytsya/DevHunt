@@ -1,0 +1,34 @@
+
+html {
+
+  cursor: url("../images/cursor/cursor-auto-@1x.png"), auto;
+
+  @supports (cursor: url("data:image/webp"), auto) {
+    cursor: url("../images/cursor/cursor-auto-@1x.webp");
+  }
+
+  @media (min-device-pixel-ratio:2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    cursor: url("../images/cursor/cursor-auto-@2x.png");
+
+    @supports (cursor: url("data:image/webp"), auto) {
+      cursor: url("../images/cursor/cursor-auto-@2x.webp"), auto;
+    }
+  }
+}
+
+a {
+
+  cursor: url("../images/cursor/cursor-auto-@1x.png"), auto;
+
+  @supports (cursor: url("data:image/webp"), auto) {
+    cursor: url("../images/cursor/cursor-auto-@1x.webp");
+  }
+
+  @media (min-device-pixel-ratio:2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    cursor: url("../images/cursor/cursor-auto-@2x.png");
+
+    @supports (cursor: url("data:image/webp"), auto) {
+      cursor: url("../images/cursor/cursor-auto-@2x.webp"), auto;
+    }
+  }
+}
