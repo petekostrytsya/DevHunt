@@ -80,6 +80,23 @@
     margin-top: 24px;
 }
 
+.about-btn:hover {
+  background-color: #0A8817 ; 
+  border: 0;
+}
+
+.about-btn:focus {
+    background-color: #0A8817;
+    color: #FCFCFC;
+    fill: #FCFCFC;
+    border: 0;
+    outline: transparent;
+}
+
+about-btn:disabled {
+    background-color: #ABABAB;
+}
+
 .about-btn-arrow {
 width: 12px;
 height: 12pt;
@@ -187,10 +204,10 @@ height: 12pt;
 .about-picture {
     margin-top: 32px;
     margin-bottom: 40px;
-    width: 490px;
+    width: 491px;
     height: 529px;
     background-image: url(../images/background/about-bg/about-picture-bg-1200.png);
-   
+    background-size: 491px;
     padding-top: 39px;
 }
    }
