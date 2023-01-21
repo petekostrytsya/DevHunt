@@ -20,14 +20,84 @@
       </svg>
 
       <h1 class="modal-title">Buy now</h1>
+      <section class="modal-products">
+        <input
+          type="checkbox"
+          name="product1"
+          id="modal-product1"
+          class="send-form-checkbox"
+        />
+        <label for="modal-product1" class="modal-products-form-label-check">
+          <div class="modal-product1">
+            <div class="modal-img-container">
+              <img
+                class="modal-img-product modal-product"
+                src="./images/Product1.jpg"
+                alt="Acecream"
+              />
+            </div>
+            <p class="modal-product-name">ice cream</p>
+          </div>
+        </label>
+
+        <input
+          type="checkbox"
+          name="product2"
+          id="modal-product2"
+          class="send-form-checkbox"
+        />
+        <label for="modal-product2" class="modal-products-form-label-check">
+          <div class="modal-product2">
+            <div class=".modal-img-container modal-product">
+              <img
+                class="modal-img-product"
+                src="./images/Product1.jpg"
+                alt="Acecream"
+              />
+            </div>
+            <p class="modal-product-name">ice coffee</p>
+          </div>
+        </label>
+        <!-- class="send-form-checkbox visually-hidden" -->
+        <input
+          type="checkbox"
+          name="product3"
+          id="modal-product3"
+          class="send-form-checkbox"
+        />
+        <label for="modal-product3" class="modal-products-form-label-check">
+          <div class="modal-product3">
+            <div class="modal-img-container modal-product">
+              <img
+                class="modal-img-product"
+                src="./images/Product1.jpg"
+                alt="Acecream"
+              />
+            </div>
+            <p class="modal-product-name">milkshake</p>
+          </div>
+        </label>
+      </section>
+
+      <!-- <input
+            id="privacy-policy"
+            type="checkbox"
+            name="user_police"
+            class="send-form-checkbox visually-hidden"
+          >
+          <label for="privacy-policy" class="send-form-label-check">
+            I accept the terms and conditions of the&nbsp;<a href="#" class="privacy-policy-link">Privacy Policy</a>
+          </label> -->
+
       <!-- Form modal -->
+      <h2 class="visually-hidden">Order form</h2>
       <form class="modal-send-form">
-        <label class="send-form-label-name">
-          <span class="send-form-label-wrapper">
+        <label class="modal-send-form-label">
+          <span class="modal-send-form-label-wrapper">
             <input
               type="text"
               name="user_name"
-              class="send-form-input"
+              class="modal-send-form-input"
               required
               pattern="^[a-zA-Zа-яА-Я]+$"
               minlength="2"
@@ -36,12 +106,12 @@
             />
           </span>
         </label>
-        <label class="send-form-label">
-          <span class="send-form-label-wrapper">
+        <label class="modal-send-form-label">
+          <span class="modal-send-form-label-wrapper">
             <input
               type="tel"
               name="user_phone"
-              class="send-form-input"
+              class="modal-send-form-input"
               required
               pattern="[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}"
               title="Input format: xxx-xxx-xx-xx"
@@ -49,16 +119,15 @@
             />
           </span>
         </label>
-        <label class="send-form-label">
-          <span class="send-form-label-text">Comment</span>
+        <label class="modal-send-form-label">
           <textarea
             name="user_comment"
-            class="send-form-textarea"
+            class="modal-send-form-textarea"
             placeholder="Comment"
           ></textarea>
         </label>
 
-        <button type="submit" class="style-button">Submit</button>
+        <button type="submit" class="modal-submit-button">Submit</button>
       </form>
     </div>
 

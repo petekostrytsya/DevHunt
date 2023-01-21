@@ -21,7 +21,7 @@
 
       <h1 class="modal-title">Chololate icecream</h1>
       <div>
-        <div class="modal-img-container">
+        <div class="modal-img-container modal-ingredient">
           <img
             class="modal-img-product"
             src="./images/Product1.jpg"
@@ -75,13 +75,13 @@
 
       <!-- Form modal -->
       <h2 class="visually-hidden">Order form</h2>
-      <form class="modal-customer-form">
-        <label class="modal-customer-form-label">
-          <span class="modal-customer-form-label-wrapper">
+      <form class="modal-send-form">
+        <label class="modal-send-form-label">
+          <span class="modal-send-form-label-wrapper">
             <input
               type="text"
               name="user_name"
-              class="modal-customer-form-input"
+              class="modal-send-form-input"
               required
               pattern="^[a-zA-Zа-яА-Я]+$"
               minlength="2"
@@ -90,12 +90,12 @@
             />
           </span>
         </label>
-        <label class="modal-customer-form-label">
-          <span class="modal-customer-form-label-wrapper">
+        <label class="modal-send-form-label">
+          <span class="modal-send-form-label-wrapper">
             <input
               type="tel"
               name="user_phone"
-              class="modal-customer-form-input"
+              class="modal-send-form-input"
               required
               pattern="[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}"
               title="Input format: xxx-xxx-xx-xx"
@@ -103,10 +103,10 @@
             />
           </span>
         </label>
-        <label class="modal-customer-form-label">
+        <label class="modal-send-form-label">
           <textarea
             name="user_comment"
-            class="modal-customer-form-textarea"
+            class="modal-send-form-textarea"
             placeholder="Comment"
           ></textarea>
         </label>
