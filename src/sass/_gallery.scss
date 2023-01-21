@@ -39,10 +39,10 @@
         clip-path: inset(50%);
         margin: -1px;
     }
-
 .grennbg {
     height: 32px;
     background-color: #84A178;
+    width: 100%;
 }
 
 .whitebg {
@@ -84,9 +84,8 @@
 .review-text {
     margin-top: 32px;
     padding: 35px 39px;
-    max-width: 202px;
+    width: 202px;
     max-height: 186px;
-
 
     background-color: #84A178;
     margin-left: auto;
@@ -117,19 +116,32 @@
 
 
 /* ---media--- */
-/* @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-screen and (min-resolution: 192dpi) and (max-width: 767px),
-screen and (min-resolution: 2dppx) and (max-width: 767px) {
-    .whitebg {
-        background-image: url("../images/background/mob-bg-@2x-1162.jpg");
-    } */
+
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
 screen and (min-resolution: 192dpi) and (max-width: 767px),
 screen and (min-resolution: 2dppx) and (max-width: 767px) {
     .whitebg {
-        background-image: url("../images/background/mob-bg-@2x-1162.jpg");
+        background-image: url("../images/background/mob-bg-@2x-1770.jpg");
     }
 }
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    .whitebg {
+        background-image: url("../images/background/tab-bg-@2x-1926.jpg");
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+screen and (min-resolution: 192dpi) and (min-width: 1200px),
+screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    .whitebg {
+        background-image: url("../images/background/desk-bg-@2x-2600.jpg");
+    }
+}
+
+
 
 /* -tablet-- */
 @media screen and (min-width: 767px) {
@@ -146,6 +158,12 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 
     .whitebg-grennbg-content {
         padding-left: 93px;
-        padding-right: px;
+        padding-right: 93px;
+    }
+
+    .review-text {
+        padding: 43px 109px;
+        width: 750px;
+        max-height: 52px;
     }
 }
