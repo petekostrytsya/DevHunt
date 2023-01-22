@@ -201,13 +201,16 @@ height: 12pt;
     gap: 109px;
 }
 
+
 .about-picture {
     margin-top: 32px;
     margin-bottom: 40px;
     width: 491px;
     height: 529px;
     background-image: url(../images/background/about-bg/about-picture-bg-1200.png);
-    background-size: 491px;
-    padding-top: 39px;
+    
+    padding-top: 50px;
+    padding-left: 0;
+    padding-right: 14px;
 }
    }
