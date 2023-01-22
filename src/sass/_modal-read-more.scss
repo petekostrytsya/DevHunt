@@ -19,14 +19,28 @@
 
 /* Стили для модальных окон */
 
-.modal-read {
+.container {
+    min-width: 320px;
+}
 
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 480px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+.modal-read {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    min-width: 280px;
     height: auto;
     z-index: 30;
     background-color: #fff;
@@ -35,8 +49,13 @@
     padding: 32px 60px;
 }
 
-
 @media screen and (max-width: 767px) {
+    .modal-read {
+        min-width: 280px;
+    }
+}
+
+@media screen and (min-width: 768px) {
     .modal-read {
         width: 568px;  
 }
