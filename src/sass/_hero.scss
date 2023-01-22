@@ -12,7 +12,7 @@
 
 .hero {
   min-width: 480px;
-  padding-top: 40px;
+  // padding-top: 40px;
 }
 
 .container {
@@ -180,9 +180,9 @@ h1 span {
     padding-bottom: 52px;
   }
 
-  .hero {
-    padding-top: 14px;
-  }
+  // .hero {
+  //   padding-top: 14px;
+  // }
 
   .hero h1 {
     margin: 0px 0px 24px 0px;
@@ -215,7 +215,7 @@ h1 span {
 
   .hero-ice-cream {
     width: 268px;
-    height: 329px;
+    height: 100%;
     bottom: 0px;
     right: 92px;
   }
@@ -278,9 +278,9 @@ h1 span {
     padding-bottom: 143px;
   }
 
-  .hero {
-    padding-top: 45px;
-  }
+  // .hero {
+  //   padding-top: 45px;
+  // }
 
   .hero h1,
   .h1 span {
@@ -349,7 +349,7 @@ h1 span {
     bottom: 0px;
     right: 92px;
     width: 456px;
-    height: 560px;
+    height: 100%;
   }
 
   .hero-info {
