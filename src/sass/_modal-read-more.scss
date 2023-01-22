@@ -1,8 +1,8 @@
-/* Стили для подложки */
 
-.overlay {
 
-    /* Скрываем подложку  */
+/*.overlay {
+
+    Скрываем подложку  
     opacity: 0;
     visibility: hidden;
 
@@ -15,42 +15,58 @@
     z-index: 20;
     transition: .3s all;
 }
-
+*/
 
 /* Стили для модальных окон */
 
 .modal-read {
 
-    
-
-    /*  Центрируем и задаем z-index */
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    width: 100%;
-    max-width: 568px;
+    min-width: 280px;
     height: auto;
     z-index: 30;
     background-color: #fff;
     border: 2px solid rgba(248, 210, 78, 1);
     border-radius: 4px; 
+    padding: 32px 60px;
 }
 
+.modal-read-title {
+    font-size: 20px;
+    color: #131313;
+    font-family: var(--secondary-font);
+    line-height: 1.4;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+.modal-read-p {
+font-size: 16px;
+color: #131313;;
+font-family: var(--primary-font);
+line-height: 1.4;
+font-weight: 400;
+letter-spacing: 0.03em;
+text-align: center;
+}
 
 /* Стили для активных классов подложки и окна */
 
-.modal.active,
+/*.modal.active,
 .overlay.active {
     opacity: 1;
     visibility: visible;
-}
+}*/
 
 
 /* Стили для кнопки закрытия */
 
-.modal__cross {
+/*.modal__cross {
     width: 15px;
     height: 15px;
     position: absolute;
@@ -58,12 +74,12 @@
     right: 20px;
     fill: #444;
     cursor: pointer;
-}
+}/*
 
 
 /* Стили для кнопок. Мы ведь порядочные разработчики, негоже простые ссылки оставлять */
 
-a {
+/*a {
     padding: 20px;
     display: inline-block;
     text-decoration: none;
@@ -71,4 +87,4 @@ a {
     margin: 10px;
     color: #fff;
     border-radius: 3px;
-}
+}/*
