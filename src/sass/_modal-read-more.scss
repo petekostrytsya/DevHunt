@@ -71,7 +71,6 @@
 }
 
 .modal-read-p {
-    
     color: #131313;
     font-family: var(--primary-font);
     line-height: 1.4;
@@ -94,10 +93,27 @@
 }
 .modal-icon-close {
     position: absolute;
-    top: 20px;
-    right: 20px;
-    fill: #444;
+    top: 12px;
+    right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    fill: #131313;
     cursor: pointer;
-    border: none;
-    background-color: transparent;
-}
+    background-color: #fcfcfc;
+    border: 0;
+    
+    @media screen and (max-width: 767.99px) {
+        width: 20px;
+         height: 20px;
+    }
+    
+    @media screen and (min-width: 768px) {
+        width: 24px;
+        height: 24px;
+    }
+    }
+
