@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -84,6 +83,7 @@ ol {
   background-image: url(../images/ice-cream.png);
 }
 
+
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
@@ -117,6 +117,33 @@ ol {
 
 }
 
+
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    .adv-item-cow:first-child:before {
+    background-image: url(../images/cow@2x.png);
+    }
+}
+
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    .adv-item-cow::before {
+    background-image: url(../images/weight@2x.png);
+    }
+} 
+
+
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    .adv-item-cow:last-child:before {
+    background-image: url(../images/ice-crema@2x.png);
+    }
+} 
+
+
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
@@ -147,3 +174,4 @@ ol {
   }
 
 }
+
