@@ -156,7 +156,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
         }
         .products {
             background-image: url(/src/images/background/mob-bg-@1x-885.jpg);
-            width:  100%;
+           max-width: 767px;
         }
         .products-title {
             margin-bottom: 145px;
@@ -189,6 +189,9 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
             padding-right: 20px;
             margin-left: auto;
             margin-right: auto;
+        }
+        .products {
+            max-width: 479.99px;
         }
        
 
@@ -237,6 +240,7 @@ top: -5%;
     background-image: url(/src/images/background/tab-bg-@1x-963.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    max-width: 768pv;
 }
 .products-list {
     padding-bottom: 60px;
@@ -283,9 +287,7 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
 .products-natural {
     font-size: 30px;
 }
-.products {
-    width: 100%;
-}
+
 .products-title {
     font-size: 36px;
     margin-bottom: 303px;
@@ -294,6 +296,7 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
     background-image: url(/src/images/background/desk-bg-@1x-1300.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    max-width: 1300px;
 }
 .products-item::before {
     content: " ";
