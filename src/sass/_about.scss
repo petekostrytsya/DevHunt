@@ -78,6 +78,11 @@
     line-height: 1.29;
 
     margin-top: 24px;
+
+
+    transition-property: box-shadow;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .about-btn:hover {
