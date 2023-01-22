@@ -65,7 +65,7 @@
 .contacts-button:focus {
     border: 2px solid #0A8817;
 }
-
+// mobile-contacts 
 @media screen and (max-width: 479px) {
     .contacts-conteiner{
         display: flex;
@@ -95,7 +95,7 @@
         font-weight: 500;
         font-size: 12px;
         line-height: 120%;
-        display: flex;
+        display: block;
         align-items: center;
         text-align: center;
         letter-spacing: 0.04em;
@@ -159,4 +159,106 @@
         align-items: center;
         justify-content: center;
     }
+}
+// tablet-contacts
+@media screen and (min-width: 768px){
+    .contacts-conteiner{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .info-contacts{
+        flex-basis: calc(100% / 3 - 32px);
+    }
+   
+    .info-contacts{
+        background: #FCFCFC;
+        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+        border-radius: 24px;
+        padding-top: 40px;
+        padding-right: 24px;
+        padding-bottom: 40px;
+        padding-left: 24px;
+    }
+    .categories-contacts{
+        width: 73px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        padding-left: 13px;
+        padding-right: 13px;
+        font-family: var(--primary-font);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 140%;
+        display: block;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: #131313;
+        background: #F8D24E;
+        border-radius: 6px;
+    }
+    .categories-contacts-foodtruck{
+        width: 138px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .city-name-contacts{
+        font-family: var(--primary-font);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 186%;
+        letter-spacing: 0.04em;    
+        color: #131313;
+    }
+    .city-address-contacts{
+        font-family: var(--primary-font);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 183%;
+        letter-spacing: 0.04em;    
+        color: #D6936D;
+        margin-top: 12px;
+        margin-bottom: 32px;
+    }
+    .day-contacts{
+        font-family: var(--primary-font);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 186%;
+        letter-spacing: 0.04em;
+        color: #D6936D;
+    }
+    .time-contacts{
+        font-family: var(--primary-font);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 186%;
+        color: #907E82;
+    }
+    .morning-time{
+        margin-bottom: 8px;
+    }
+    .menu-contacts{
+        margin-top: 32px;
+    }
+    .contacts-phone-mail{
+        font-family: var(--primary-font);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 150%;
+        color: #131313;
+    }
+    
+    .contacts-buttons-wrapper {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+    }
+    .contacts-btn {
+        margin-right: 16px;
+    }
+
 }
