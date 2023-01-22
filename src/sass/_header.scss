@@ -1,11 +1,13 @@
 /* Мобільне меню */
 @media screen and (max-width: 767px) {
         .header-main-nav {
+                max-width: 480px;
                 position: relative;
                 height: 44px;
                 padding-top: 14px;
                 padding-left: 20px;
                 padding-right: 20px;
+                background-color: #84A178;
         }
 
         .header-logo-icon {
@@ -175,6 +177,7 @@
 /*Планшетне меню*/
 @media screen and (min-width: 768px) and (max-width: 1199px) {
         .header-main-nav {
+                max-width: 768px;
                 position: relative;
                 height: 46px;
                 padding-top: 20px;
@@ -222,7 +225,6 @@
                 display: flex;
                 width: 152px;
                 height: 42px;
-                margin-top: 4px;
                 padding-top: 12px;
                 padding-bottom: 12px;
                 padding-left: 36px;
@@ -357,6 +359,7 @@
                 display: none;
         }
         .header-main-nav {
+                max-width: 1200px;
                 position: relative;
                 height: 65px;
                 padding-top: 8px;
@@ -365,6 +368,7 @@
                 background-color: #84A178;
                 display: flex;
                 align-items: center;
+                justify-content: center;
         }
         .header-logo-icon {
                 width: 60px;
