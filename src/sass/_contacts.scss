@@ -1,325 +1,323 @@
-.for-contacts{
-    background: #84A178;
-}
+// .for-contacts{
+//     background: #84A178;
+// }
 .visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 .day-and-time-contacts::before,
-.day-and-time-contacts::after{
-    content: "";
-    display: block;
-    width: 100%;
-    border: 1px solid #E1E1E1
+.day-and-time-contacts::after {
+  content: '';
+  display: block;
+  width: 100%;
+  border: 1px solid #e1e1e1;
 }
 .contacts-btn {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    font-family: var(--primary-font);
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 18px;
-    display: flex;
-    align-items: center;
-    color: #131313;
-    outline: none;
-    border: 0 solid transparent;
-    border-radius: 10px;
-    background-color: #f8d24e;
-    margin-top: 24px;
-    margin-bottom: 16px;
-    width: 196px;
-    justify-content: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-family: var(--primary-font);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: #131313;
+  outline: none;
+  border: 0 solid transparent;
+  border-radius: 10px;
+  background-color: #f8d24e;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  width: 196px;
+  justify-content: center;
 }
 
 .contacts-btn:hover,
 .contacts-btn:focus {
-    background: #0A8817;
+  background: #0a8817;
 }
 
 .contacts-button {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    font-family: var(--primary-font);
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 18px;
-    display: flex;
-    align-items: center;
-    color: #131313;
-    outline: none;
-    border: 0 solid transparent;
-    border: 2px solid #F8D24E;
-    border-radius: 10px;
-    width: 196px;
-    justify-content: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-family: var(--primary-font);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: #131313;
+  outline: none;
+  border: 0 solid transparent;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+  width: 196px;
+  justify-content: center;
 }
 .contacts-button:hover,
 .contacts-button:focus {
-    border: 2px solid #0A8817;
+  border: 2px solid #0a8817;
 }
-        //   The same for everyone
+//   The same for everyone
 .info-contacts {
-    background: #FCFCFC;
-    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-    border-radius: 24px;
+  background: #fcfcfc;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
 }
-.categories-contacts{
-    font-family: var(--primary-font);
-    font-weight: 500;
-    line-height: 120%;
-    display: block;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.04em;
-    color: #131313;
-    background: #F8D24E;
+.categories-contacts {
+  font-family: var(--primary-font);
+  font-weight: 500;
+  line-height: 120%;
+  display: block;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #131313;
+  background: #f8d24e;
 }
-.city-name-contacts{
-    font-family: var(--primary-font);
-    font-weight: 500;
-    letter-spacing: 0.04em;
-    color: #131313;
+.city-name-contacts {
+  font-family: var(--primary-font);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: #131313;
 }
 .city-address-contacts {
-    font-family: var(--primary-font);
-    font-weight: 500;
-    line-height: 183%;
-    letter-spacing: 0.04em;
-    color: #D6936D;
+  font-family: var(--primary-font);
+  font-weight: 500;
+  line-height: 183%;
+  letter-spacing: 0.04em;
+  color: #d6936d;
 }
 .day-contacts {
-    font-family: var(--primary-font);
-    font-weight: 500;
-    letter-spacing: 0.04em;
-    color: #D6936D;
+  font-family: var(--primary-font);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: #d6936d;
 }
 .time-contacts {
-    font-family: var(--primary-font);
-    font-weight: 500;
-    line-height: 186%;
-    color: #907E82;
+  font-family: var(--primary-font);
+  font-weight: 500;
+  line-height: 186%;
+  color: #907e82;
 }
 .contacts-phone-mail {
-    font-family: var(--primary-font);
-    font-weight: 500;
-    line-height: 150%;
-    color: #131313;
+  font-family: var(--primary-font);
+  font-weight: 500;
+  line-height: 150%;
+  color: #131313;
 }
 .contacts-buttons-wrapper {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-// mobile-contacts 
-@media screen and (max-width: 767px) {
-
-    .list-contacts{
+// mobile-contacts
+@media screen and (max-width: 767.99px) {
+  .list-contacts {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    }
-    .info-contacts:not(:last-child){
-        margin-bottom: 16px;
-    }
-    .info-contacts{
-        max-width: 280px;
-        padding-top: 40px;
-        padding-right: 32px;
-        padding-bottom: 24px;
-        padding-left: 32px;
-    }
-    .categories-contacts{
-        width: 80px;
-        padding-top: 4px;
-        padding-bottom: 4px;
-        padding-left: 22px;
-        padding-right: 22px;
-        font-size: 12px;
-        line-height: 120%;
-        border-radius: 4px;
-        margin-bottom: 20px;
-    }
-    .categories-contacts-foodtruck{
-        width: 130px;
-    }
-    .city-name-contacts{
-        font-size: 14px;
-        line-height: 186%;
-    }
-    .city-address-contacts{
-        font-size: 14px;
-        margin-top: 20px;
-        margin-bottom: 8px;
-    }
-    .day-contacts{
-        font-size: 14px;
-        line-height: 183%;
-    }
-    .time-contacts{
-        font-size: 14px;
-    }
-    .morning-time{
-        margin-bottom: 8px;
-    }
-    .menu-contacts{
-        margin-top: 24px;
-    }
-    .contacts-phone-mail{
-        font-size: 14px;
-    }
-    .contacts-buttons-wrapper {
-        flex-direction: column;
-        align-items: center;
-    }
+  }
+  .info-contacts:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  .info-contacts {
+    max-width: 280px;
+    padding-top: 40px;
+    padding-right: 32px;
+    padding-bottom: 24px;
+    padding-left: 32px;
+  }
+  .categories-contacts {
+    width: 80px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 22px;
+    padding-right: 22px;
+    font-size: 12px;
+    line-height: 120%;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  .categories-contacts-foodtruck {
+    width: 130px;
+  }
+  .city-name-contacts {
+    font-size: 14px;
+    line-height: 186%;
+  }
+  .city-address-contacts {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+  }
+  .day-contacts {
+    font-size: 14px;
+    line-height: 183%;
+  }
+  .time-contacts {
+    font-size: 14px;
+  }
+  .morning-time {
+    margin-bottom: 8px;
+  }
+  .menu-contacts {
+    margin-top: 24px;
+  }
+  .contacts-phone-mail {
+    font-size: 14px;
+  }
+  .contacts-buttons-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 // tablet-contacts
-@media screen and (min-width: 768px){
-    
-    .list-contacts{
-        display: flex;
-    }
-    .info-contacts{
-        flex-basis: calc(100% / 3 - 32px);
-    }
-    .info-contacts:not(:last-child){
-        margin-right: 16px;
-    }
-    .info-contacts{
-        max-width: 224px;
-        padding-top: 40px;
-        padding-right: 24px;
-        padding-bottom: 40px;
-        padding-left: 24px;
-    }
-    .categories-contacts{
-        width: 73px;
-        padding-top: 4px;
-        padding-bottom: 4px;
-        padding-left: 13px;
-        padding-right: 13px;
-        font-size: 16px;
-        line-height: 140%;
-        border-radius: 6px;
-        margin-bottom: 32px;
-    }
-    .categories-contacts-foodtruck{
-        width: 138px;
-        padding-top: 4px;
-        padding-bottom: 4px;
-        padding-left: 13px;
-        padding-right: 13px;
-    }
-    .city-name-contacts{
-        font-size: 14px;
-        line-height: 186%;
-    }
-    .city-address-contacts{
-        font-size: 14px;
-        margin-top: 12px;
-        margin-bottom: 32px;
-    }
-    .day-contacts{
-        font-size: 14px;
-        line-height: 186%;
-    }
-    .time-contacts{
-        font-size: 14px;
-    }
-    .morning-time{
-        margin-bottom: 8px;
-    }
-    .menu-contacts{
-        margin-top: 32px;
-    }
-    .contacts-phone-mail{
-        font-size: 14px;
-    }
-    .contacts-buttons-wrapper {
-        align-items: baseline;
-        margin-top: 40px;
-    }
-    .contacts-btn {
-        margin-right: 16px;
-    }
+@media screen and (min-width: 768px) {
+  .list-contacts {
+    display: flex;
+    justify-content: center;
+  }
+  .info-contacts {
+    flex-basis: calc(100% / 3 - 32px);
+  }
+  .info-contacts:not(:last-child) {
+    margin-right: 16px;
+  }
+  .info-contacts {
+    max-width: 224px;
+    padding-top: 40px;
+    padding-right: 24px;
+    padding-bottom: 40px;
+    padding-left: 24px;
+  }
+  .categories-contacts {
+    width: 73px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 13px;
+    padding-right: 13px;
+    font-size: 16px;
+    line-height: 140%;
+    border-radius: 6px;
+    margin-bottom: 32px;
+  }
+  .categories-contacts-foodtruck {
+    width: 138px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+  .city-name-contacts {
+    font-size: 14px;
+    line-height: 186%;
+  }
+  .city-address-contacts {
+    font-size: 14px;
+    margin-top: 12px;
+    margin-bottom: 32px;
+  }
+  .day-contacts {
+    font-size: 14px;
+    line-height: 186%;
+  }
+  .time-contacts {
+    font-size: 14px;
+  }
+  .morning-time {
+    margin-bottom: 8px;
+  }
+  .menu-contacts {
+    margin-top: 32px;
+  }
+  .contacts-phone-mail {
+    font-size: 14px;
+  }
+  .contacts-buttons-wrapper {
+    align-items: baseline;
+    margin-top: 40px;
+  }
+  .contacts-btn {
+    margin-right: 16px;
+  }
 }
-    //    desktop
-@media screen and (min-width: 1200px){
-  
-    .list-contacts{
-        display: flex;
-    }
-    .info-contacts{
-        flex-basis: calc(100% / 3 - 64px);
-    }
-    .info-contacts:not(:last-child){
-        margin-right: 32px;
-    }
-    .info-contacts{
-        max-width: 368px;
-        padding-top: 40px;
-        padding-right:40 px;
-        padding-bottom: 40px;
-        padding-left: 40px;
-    }
-    .categories-contacts{
-        width: 76px;
-        padding-top: 4px;
-        padding-bottom: 4px;
-        padding-left: 14px;
-        padding-right: 14px;
-        font-size: 16px;
-        line-height: 140%;
-        border-radius: 6px;
-        margin-bottom: 32px;
-    }
-    .categories-contacts-foodtruck{
-        width: 148px;
-        padding-top: 4px;
-        padding-bottom: 4px;
-        padding-left: 14px;
-        padding-right: 14px;
-    }
-    .city-name-contacts{
-        font-size: 16px;
-        line-height: 186%;
-    }
-    .city-address-contacts{
-        font-size: 16px;
-        line-height: 183%;
-        margin-top: 8px;
-        margin-bottom: 32px;
-    }
-    .day-contacts{
-        font-size: 16px;
-        line-height: 186%;
-    }
-    .time-contacts{
-        font-size: 16px;
-    }
-    .morning-time{
-        margin-bottom: 12px;
-    }
-    .menu-contacts{
-        margin-top: 32px;
-    }
-    .contacts-phone-mail{
-        font-size: 16px;
-    }
-    .contacts-buttons-wrapper {
-        align-items: baseline;
-        margin-top: 60px;
-    }
-    .contacts-btn {
-        margin-right: 16px;
-    }
+//    desktop
+@media screen and (min-width: 1200px) {
+  .list-contacts {
+    display: flex;
+  }
+  .info-contacts {
+    flex-basis: calc(100% / 3 - 64px);
+  }
+  .info-contacts:not(:last-child) {
+    margin-right: 32px;
+  }
+  .info-contacts {
+    max-width: 368px;
+    padding-top: 40px;
+    padding-right: 40 px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+  }
+  .categories-contacts {
+    width: 76px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 14px;
+    padding-right: 14px;
+    font-size: 16px;
+    line-height: 140%;
+    border-radius: 6px;
+    margin-bottom: 32px;
+  }
+  .categories-contacts-foodtruck {
+    width: 148px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+  .city-name-contacts {
+    font-size: 16px;
+    line-height: 186%;
+  }
+  .city-address-contacts {
+    font-size: 16px;
+    line-height: 183%;
+    margin-top: 8px;
+    margin-bottom: 32px;
+  }
+  .day-contacts {
+    font-size: 16px;
+    line-height: 186%;
+  }
+  .time-contacts {
+    font-size: 16px;
+  }
+  .morning-time {
+    margin-bottom: 12px;
+  }
+  .menu-contacts {
+    margin-top: 32px;
+  }
+  .contacts-phone-mail {
+    font-size: 16px;
+  }
+  .contacts-buttons-wrapper {
+    align-items: baseline;
+    margin-top: 60px;
+  }
+  .contacts-btn {
+    margin-right: 16px;
+  }
 }
