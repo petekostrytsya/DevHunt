@@ -69,14 +69,44 @@
 }
 
 /* Стили для кнопки закрытия */
-.modal__cross {
-  width: 11px;
-  height: 11px;
+// .modal__cross {
+.modal-close-btn {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  padding: 0;
+  margin: 0;
+  list-style: none;
   fill: #131313;
   cursor: pointer;
+  background-color: #fcfcfc;
+  border: 0;
+
+  @media screen and (max-width: 767.99px) {
+    width: 20px;
+    height: 20px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    width: 24px;
+    height: 24px;
+  }  
+}
+
+.modal-close-btn-icon{
+  @media screen and (max-width: 767.99px) {
+    width: 11px;
+    height: 11px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 14px;
+    height: 14px;
+  }
+  
 }
 
 /* Стили для кнопок. */
@@ -105,6 +135,11 @@
 }
 
 .modal-title {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
   @media screen and (max-width: 767.99px) {
     margin-top: 28px;
   }
@@ -115,12 +150,9 @@
   
   font-family: 'Seymour One';
   // font-style: normal;
-  // font-weight: 400;  
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
+  // font-weight: 400; 
+  font-size: 20px;
+  line-height: 1.4;
 
   color: #131313;
 }
@@ -135,8 +167,8 @@
   font-family: 'Montserrat';
     // font-style: normal;
     // font-weight: 400;
-    font-size: 14px;
-    line-height: 1.4;  
+  font-size: 14px;
+  line-height: 1.4;  
   
-    color: #131313;
+  color: #131313;
 }

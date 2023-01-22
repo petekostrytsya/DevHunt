@@ -1,28 +1,25 @@
 
-.modal-title {
+.modal.container.ingred{
   @media screen and (max-width: 767.99px) {
-    max-width: 145px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 0 20px;
   }
 
-    // @media screen and (min-width: 767767.99px) {
-    //   max-width: 145px;
-    //   margin-left: auto;
-    //   margin-right: auto;
-    // }
-  
-  font-size: 20px;
-  line-height: 1.4;
+  @media screen and (min-width: 768px) {
+    padding: 0 40px;
+  }
 }
 
 .modal-img-container {
-  position: relative;
-  // display: flex;
-  // align-items: center;
-  // text-align: center;
-  // justify-content: center;
+  // position: relative;
   margin: auto;
+  @media screen and (max-width: 767.99px) {
+    margin-top: 27px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 31px;
+  }
+
   margin-top: 27px;
   border-radius: 50%;
   max-width: 132px;
@@ -31,10 +28,6 @@
       rgba(156, 190, 143, 0.7)), #D9D9D9;
   box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
 }
-
-// .modal-img-container.modal-ingredient{
-//   margin-top: 27px;
-// }
 
 .modal-img-product {
   position:relative;
@@ -45,21 +38,34 @@
 
 .modal-nutritional-value-list {
   display: flex;
-  @media screen and (max-width:280px) {
+  @media screen and (max-width: 767.99px) {
     flex-wrap: wrap;
     row-gap: 9px;
+    margin-top: 22px;
+    column-gap: 9px;
   }
-  // flex-wrap: wrap;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 25px;
+    column-gap: 20px;
+  }
+
   align-items: center;
   justify-content: center;
-  margin-top: 22px;
-  column-gap: 9px;
+  
 }
 
 .modal-nutritional-value-item {
-  // display: flex;
-  // text-align: center;
-  width: 53px;
+  @media screen and (max-width: 767.99px) {
+    width: 53px;
+    padding-bottom: 8px;
+  }
+
+  @media screen and (min-width:768px) {
+    width: 65px;
+    padding-bottom: 14px;
+  }
+
   border: 2px solid #9CBE8F;
   border-radius: 40px;
 }
@@ -69,31 +75,56 @@
   align-items: center;
   text-align: center;
   justify-content: center;
-  width: 43px;
-  height: 43px;
+
+  @media screen and (max-width:767.99px) {
+    width: 43px;
+    height: 43px;
+    font-size: 10px;
+    line-height: 2.8;
+  }
+
+  @media screen and (min-width:768px) {
+    width: 53px;
+    height: 53px;
+    font-size: 12px;
+    line-height: 2.33;
+  }
 
   background: #9CBE8F;
   border: 2px solid #9CBE8F;
   border-radius: 50%;
   box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
-
 }
 
-.modal-nutritional-value-unit{
-  margin: 8px auto;
+.modal-nutritional-value-unit{  
   font-family: 'Montserrat';
-  font-size: 10px;
-  line-height: 1.2;
+  @media screen and (max-width:767.99px) {
+    font-size: 10px;
+    line-height: 1.2;
+    margin: 8px auto 0 auto;
+  }
+  
+  @media screen and (min-width:768px) {
+    font-size: 12px;
+    line-height: 1.25;
+    margin: 7px auto 0 auto;
+  }
   
   color: #131313;
 }
 
-.modal-ingredients{
-  margin: 40px auto;
+.modal-ingredients {
+  @media screen and (max-width:767.99px) {
+    margin: 40px auto;
+  }
+
+  @media screen and (min-width:768px) {
+    margin: 48px auto;
+  }
 }
 
 .modal-ingredients-title {
-  font-family: 'Montserrat';
+  // font-family: 'Montserrat';
   font-weight: 500;
   font-size: 20px;
   line-height: 1.4;
@@ -104,6 +135,12 @@
 .modal-ingredients-item{
   display: flex;
   justify-content: space-between;
+  // font-family: 'Montserrat';
+  font-size: 14px;
+  line-height: 1.76;
+  letter-spacing: 0.04em;
+  
+  color: #131313;
 }
 
 .modal-ingredients-item:first-child {
@@ -114,13 +151,22 @@
   margin-bottom: 11px;
 }
 
-// .modal-send-form-label{
-//   width: 100%;
-// }
+.modal-send-form-label:not(first-child) {
+  margin-top: 16px;
+}
 
 .modal-send-form-input,
 .modal-send-form-textarea {
   width: 100%;
+  @media screen and (max-width: 767.99px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 365px;
+    margin: 0 auto;
+  }
+
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   color: #000000;
@@ -130,8 +176,8 @@
 //   padding: 11px;
 // }
 
-.modal-send-form-label:not(first-child) {
-  margin-top: 16px;
+.modal-send-form-input{
+  height: 42px;
 }
 
 .modal-send-form-textarea {
@@ -145,7 +191,7 @@
   width: 132px;
   height: 42px;
 
-  font-family: 'Montserrat';
+  // font-family: 'Montserrat';
     // font-style: normal;
   font-weight: 600;
   font-size: 14px;

@@ -4,12 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ingredients</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Seymour+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>Product card</title>
   </head>
   <body>
-    <div class="modal container" data-modal="2">
+    <div class="modal container prod-card" data-modal="2">
+      <button type="button" class="modal-close-btn js-modal-close">
+        <svg class="modal-close-btn-icon">
+          <use href="./images/sprite.svg#icon-close-line"></use>
+        </svg>
+      </button>
+
       <!--   Svg иконка для закрытия окна  -->
-      <svg
+      <!-- <svg
         class="modal__cross js-modal-close"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
@@ -17,9 +29,9 @@
         <path
           d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
         />
-      </svg>
+      </svg> -->
 
-      <h1 class="modal-title">Buy now</h1>
+      <h1 class="modal-title modal-buy-now">Buy now</h1>
       <section class="modal-products">
         <input
           type="checkbox"
