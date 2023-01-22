@@ -35,6 +35,14 @@
     padding: 32px 60px;
 }
 
+
+@media screen and (max-width: 767px) {
+    .modal-read {
+        width: 568px;  
+}
+}
+
+
 .modal-read-title {
     font-size: 20px;
     color: #131313;
@@ -52,7 +60,16 @@
     line-height: 1.4;
     font-weight: 400;
     letter-spacing: 0.03em;
-    text-align: center;
+}
+
+.modal-icon-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    fill: #444;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
 }
 
 /* Стили для активных классов подложки и окна 
@@ -62,22 +79,13 @@
     opacity: 1;
     visibility: visible;
 }
+*/
+
+ 
 
 
- Стили для кнопки закрытия 
 
-.modal__cross {
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    fill: #444;
-    cursor: pointer;
-}
-
-
- Стили для кнопок. Мы ведь порядочные разработчики, негоже простые ссылки оставлять 
+ /*Стили для кнопок. Мы ведь порядочные разработчики, негоже простые ссылки оставлять 
 
 a {
     padding: 20px;
