@@ -1,34 +1,35 @@
-
 html {
+  cursor: url('../images/cursor/cursor-auto-@1x.png'), auto;
 
-  cursor: url("../images/cursor/cursor-auto-@1x.png"), auto;
-
-  @supports (cursor: url("data:image/webp"), auto) {
-    cursor: url("../images/cursor/cursor-auto-@1x.webp");
+  @supports (cursor: url('data:image/webp'), auto) {
+    cursor: url('../images/cursor/cursor-auto-@1x.webp');
   }
 
-  @media (min-device-pixel-ratio:2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    cursor: url("../images/cursor/cursor-auto-@2x.png");
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    cursor: url('../images/cursor/cursor-auto-@2x.png');
 
-    @supports (cursor: url("data:image/webp"), auto) {
-      cursor: url("../images/cursor/cursor-auto-@2x.webp"), auto;
+    @supports (cursor: url('data:image/webp'), auto) {
+      cursor: url('../images/cursor/cursor-auto-@2x.webp'), auto;
     }
   }
 }
 
 a {
+  cursor: url('../images/cursor/cursor-pointer-@1x.png'), pointer;
 
-  cursor: url("../images/cursor/cursor-auto-@1x.png"), auto;
-
-  @supports (cursor: url("data:image/webp"), auto) {
-    cursor: url("../images/cursor/cursor-auto-@1x.webp");
+  @supports (cursor: url('data:image/webp'), pointer) {
+    cursor: url('../images/cursor/cursor-pointer-@1x.webp');
   }
 
-  @media (min-device-pixel-ratio:2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    cursor: url("../images/cursor/cursor-auto-@2x.png");
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    cursor: url('../images/cursor/cursor-pointer-@2x.png');
 
-    @supports (cursor: url("data:image/webp"), auto) {
-      cursor: url("../images/cursor/cursor-auto-@2x.webp"), auto;
+    @supports (cursor: url('data:image/webp'), pointer) {
+      cursor: url('../images/cursor/cursor-pointer-@2x.webp'), pointer;
     }
   }
 }

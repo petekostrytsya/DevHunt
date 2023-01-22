@@ -15,7 +15,7 @@
   // padding-top: 40px;
 }
 
-.container {
+.hero-container {
   width: 480px;
   padding-left: 20px;
   padding-right: 20px;
@@ -174,7 +174,7 @@ h1 span {
 /* ============TABLET========== */
 
 @media screen and (min-width: 768px) {
-  .container {
+  .hero-container {
     width: 768px;
     padding: 0 32px;
     padding-bottom: 52px;
@@ -272,7 +272,7 @@ h1 span {
 /*================ DESKTOP =================*/
 
 @media screen and (min-width: 1200px) {
-  .container {
+  .hero-container {
     width: 1200px;
     padding: 0 16px;
     padding-bottom: 143px;
