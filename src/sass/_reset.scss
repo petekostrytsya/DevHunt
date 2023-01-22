@@ -1,54 +1,50 @@
 :root {
-    --primary-font: 'Montserrat', sans-serif;
-    --secondary-font: 'Seymour One', sans-serif;
-}
-
-body {
-    background-color: #84A178;
+  --primary-font: 'Montserrat', sans-serif;
+  --secondary-font: 'Seymour One', sans-serif;
 }
 
 h1,
 h2,
 h3,
-h4
+h4,
 p {
-    margin-top: 0;
-    margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 ul,
 ol {
-    list-style: none;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 img {
-    display: block;
+  display: block;
 }
-
 
 .container {
-    width: 480px;
-    margin: 0 auto;
-    padding: 0 20px;
+  width: 480px;
+  margin: 0 auto;
+  padding: 0 20px;
+  background-color: #84a178;
 
-@media screen and (max-width: 479px) {
+  @media screen and (max-width: 479px) {
     width: 100%;
-}
+  }
 
-@media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     width: 768px;
     padding: 0 32px;
-}
+  }
 
-@media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     width: 1200px;
     padding: 0 16px;
-}
+  }
 }
