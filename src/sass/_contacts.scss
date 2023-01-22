@@ -122,13 +122,14 @@
 // mobile-contacts 
 @media screen and (max-width: 767px) {
 
-    .info-contacts:not(:last-child){
-        margin-bottom: 16px;
-    }
-   
-    .info-contacts{
+    .list-contacts{
+    display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
+    }
+    .info-contacts:not(:last-child){
+        margin-bottom: 16px;
     }
     .info-contacts{
         max-width: 280px;
