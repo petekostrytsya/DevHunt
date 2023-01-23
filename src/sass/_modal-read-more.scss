@@ -28,7 +28,7 @@
 
 
 /* style overlay*/
-.overlay {
+/*.overlay {
     opacity: 0;
     visibility: hidden;
 
@@ -39,11 +39,10 @@
     height: 100%;
     background-color: rgba(0, 0, 0, .5);
     z-index: 520;
-    // transition: 1.3s all;
     transition: opacity var(--transition-dur-and-timing-fun);
     -webkit-transition: opacity var(--transition-dur-and-timing-fun);
     -moz-transition: opacity var(--transition-dur-and-timing-fun);
-}
+}*/
 
 .modal-read {
     position: absolute;
@@ -72,12 +71,12 @@
 }
 }
 
-.modal.active,
+/*.modal.active,
 .overlay.active {
     opacity: 1;
     visibility: visible;
 }
-
+*/
 .modal-read-title {
     color: #131313;
     font-family: var(--secondary-font);
