@@ -13,6 +13,10 @@
     />
     <link
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link
@@ -41,18 +45,7 @@
     <include src="./partials/footer.html"></include>
 
     <!-- MODAL FORM -->
-    <include src=""></include>
-    <include src="./partials/modal-ingredients.html"></include>
-    <include src="./partials/modal-product-card.html"></include>
-    <include src=""></include>
-    <include src=""></include>
-    <include src="./partials/modal-franchise.html"></include>
-
-    <button class="js-open-modal btn" data-modal="1">modal Ingredients</button>
-    <button class="js-open-modal btn" data-modal="2">modal Buy now</button>
-    <button class="js-open-modal btn" data-modal="3">modal Read more</button>
-    <button class="js-open-modal btn" data-modal="4">modal Our location</button>
-    <button class="js-open-modal btn" data-modal="5">modal Franchise</button>
+    <include src="./partials/modal.html"></include>
 
     <!-- wow JS -->
     <script src="./js/wow.min.js"></script>
@@ -63,6 +56,42 @@
 
     <!-- swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper('.mySwiper1', {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
+
+    <script>
+      var swiper = new Swiper('.mySwiper2', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        keyboard: {
+          enabled: true,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
     <!-- /swiper -->
 
     <!-- modal windows -->
