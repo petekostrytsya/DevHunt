@@ -149,19 +149,27 @@
     }
 }
 
+@media screen and (min-width: 768px) {
+    .modal-video {
+        display: flex;
+        justify-content: center;
+    
+
+    }
+
+}
+
 .video {
-    width: 224px;
-    height: 199px;
     margin-bottom: 20px; }
 
 @media screen and (min-width: 768px) {
     .video {
-    display: flex;
-    justify-content: center;
     width: 448px;
     height: 205px;
-    margin-bottom: 32px;
+    
     }
+
 }
+
 
 
