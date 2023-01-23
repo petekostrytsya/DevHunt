@@ -9,6 +9,11 @@
   }
 }
 
+.ingred .modal-title {
+  @media screen and (max-width: 767.99px) {
+    width: 145px;
+  }
+}
 
 .modal-img-container {
   // position: relative;
@@ -173,10 +178,6 @@
   color: #000000;
 }
 
-// .modal-send-form-label-wrapper{
-//   padding: 11px;
-// }
-
 .modal-send-form-input{
   height: 42px;
 }
@@ -229,6 +230,21 @@
   color: #000000;
   cursor: default;
 }
+
+.marker1:active {
+  @media screen  and (min-width: 0){
+    .modal-product_2{
+      display: none;
+    }
+    .modal-product_3{
+      display: none;
+    }
+  }
+
+
+}
+
+
 
 
 //*******************
