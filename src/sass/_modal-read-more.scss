@@ -67,7 +67,7 @@
 @media screen and (min-width: 768px) {
     .modal-read {
         width: 568px;  
-        padding: 32px;
+        padding: 32px 60px;
 }
 }
 
@@ -109,6 +109,7 @@
     font-weight: 400;
     letter-spacing: 0.03em;
     margin: 0;
+    text-align: justify;
 }
 
 @media screen and (max-width: 767px) {
