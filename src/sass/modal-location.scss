@@ -44,6 +44,8 @@
 }*/
 
 .modal-location {
+    display: flex;
+    flex-direction: column;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -66,8 +68,7 @@
 
 @media screen and (min-width: 768px) {
     .modal-location {
-        display: flex;
-        flex-direction: column;
+        
         width: 568px;
         padding: 32px 60px;
     }
