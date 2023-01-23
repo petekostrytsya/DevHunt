@@ -180,11 +180,14 @@
 
 
 .modal-send-form-input {
+  width: 224px;
+  height: 32px;
   font-family: var(--primary-font);
-  // font-style: normal;
-  // font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.4;
-
+  border: 1px solid #84A178;
+  border-radius: 10px;
+  background-color: rgba(248, 210, 78, 0.1);
   color: #131313;
+  margin-bottom: 12px;
 }
