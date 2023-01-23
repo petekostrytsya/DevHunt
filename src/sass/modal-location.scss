@@ -54,6 +54,7 @@
     background-color: #fff;
     border: 2px solid rgba(248, 210, 78, 1);
     border-radius: 10px;
+   
 }
 
 @media screen and (max-width: 767px) {
@@ -65,6 +66,8 @@
 
 @media screen and (min-width: 768px) {
     .modal-location {
+        display: flex;
+        flex-direction: column;
         width: 568px;
         padding: 32px 60px;
     }
