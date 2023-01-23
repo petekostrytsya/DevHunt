@@ -129,6 +129,15 @@
   margin-bottom: 24px;
 }
 
+ @media screen and (min-width: 768px) {
+  .modal-franchise-text {
+      font-size: 16px;
+      margin-bottom: 32px;
+  
+    }
+ }
+ 
+
 .btn-franchise {
     font-family: var(--primary-font);
     padding: 12px 34px;
@@ -143,7 +152,7 @@
     line-height: 1.2;
     display: inline-block;
     margin-right: auto;
-    margin-top: auto;
+    margin-left: auto;
 }
   
   
