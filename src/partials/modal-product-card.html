@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Seymour+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>Product card</title>
+  </head>
+  <body>
+    <div class="modal container prod-card" data-modal="2">
+      <button type="button" class="modal-close-btn js-modal-close">
+        <svg class="modal-close-btn-icon">
+          <use href="./images/sprite.svg#icon-close-line"></use>
+        </svg>
+      </button>
+
+      <h1 class="modal-title modal-buy-now">Buy now</h1>
+      <section class="modal-products">
+        <ul class="modal-products-list">
+          <li class="modal-products-item">
+            <input
+              type="checkbox"
+              name="modal-name-product1"
+              id="modal-product1"
+              class="send-form-checkbox"
+            />
+            <!-- visually-hidden -->
+            <label
+              for="modal-product1"
+              class="modal-products-form-label-check"
+            >
+              <div class="modal-product-1">
+                <p class="modal-product-name">ice cream</p>
+              </div>
+                <div class="modal-img-container">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/modal-ice-cream.webp    1x,
+                        ./images/modal-ice-cream@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/modal-ice-cream.png    1x,
+                        ./images/modal-ice-cream@2x.png 2x
+                      "
+                    />
+                    <img
+                      class="modal-img-product modal-product"
+                      src="./images/modal-ice-cream.png"
+                      alt="Acecream"
+                    />
+                  </picture>
+                </div>
+              <!-- <div class="modal-product-1">
+                <p class="modal-product-name">ice cream</p>
+              </div> -->
+            </label>
+          </li>
+          <li class="modal-products-item">
+            <input
+                type="checkbox"
+                name="modal-name-product2"
+                id="modal-product2"
+                class="send-form-checkbox"
+              />
+              <label for="modal-product2" class="modal-products-form-label-check">
+              <div class="modal-product-2">
+                <div class="modal-img-container">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/modal-product2.webp    1x,
+                        ./images/modal-product2@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/modal-product2.png    1x,
+                        ./images/modal-product2@2x.png 2x
+                      "
+                    />
+                    <img
+                      class="modal-img-product modal-product"
+                      src="./images/modal-product2.png"
+                      alt="Ace coffee"
+                    />
+                  </picture>
+                </div>
+                <p class="modal-product-name">ice cream</p>
+              </div>
+            </label>
+          </li>
+          <li class="modal-products-item">
+            <input
+              type="checkbox"
+              name="modal-name-product3"
+              id="modal-product3"
+              class="send-form-checkbox"
+            />
+            <label
+              for="modal-product3"
+              class="modal-products-form-label-check"
+            >
+              <div class="modal-product-3">
+                <div class="modal-img-container">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/modal-product3.webp    1x,
+                        ./images/modal-product3@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/modal-product3.png    1x,
+                        ./images/modal-product3@2x.png 2x
+                      "
+                    />
+                    <img
+                      class="modal-img-product modal-product"
+                      src="./images/modal-product3.png"
+                      alt="Milkshake"
+                    />
+                  </picture>
+                </div>
+                <p class="modal-product-name">ice cream</p>
+              </div>
+            </label>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Form modal -->
+      <h2 class="visually-hidden">Order form</h2>
+      <form class="modal-send-form">
+        <label class="modal-send-form-label">
+          <span class="modal-send-form-label-wrapper">
+            <input
+              type="text"
+              name="user_name"
+              class="modal-send-form-input"
+              required
+              pattern="^[a-zA-Zа-яА-Я]+$"
+              minlength="2"
+              title="Supported characters: A-Z, a-z, A-Z, А-Я, а-я]"
+              placeholder="Name"
+            />
+          </span>
+        </label>
+        <label class="modal-send-form-label">
+          <span class="modal-send-form-label-wrapper">
+            <input
+              type="tel"
+              name="user_phone"
+              class="modal-send-form-input"
+              required
+              pattern="[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}"
+              title="Input format: xxx-xxx-xx-xx"
+              placeholder="Phone"
+            />
+          </span>
+        </label>
+        <label class="modal-send-form-label">
+          <textarea
+            name="user_comment"
+            class="modal-send-form-textarea"
+            placeholder="Comment"
+          ></textarea>
+        </label>
+
+        <button type="submit" class="modal-submit-button">Submit</button>
+      </form>
+    </div>
+
+    <!-- Overlay modal window -->
+    <div class="overlay js-overlay-modal"></div>
+  </body>
+</html>
