@@ -1,4 +1,4 @@
-    .visual-hidden {
+    .customer-rewiews-visual-hidden {
         position: absolute;
         white-space: nowrap;
         width: 1px;
@@ -12,7 +12,7 @@
     }
 
 
-    .customer {
+    .customer-rewiews-customer {
         border-radius: 50%;
         width: 85px;
         height: 85px;
@@ -21,12 +21,12 @@
         display: block;
     }
 
-    .review {
+    .customer-rewiews-review {
         padding-top: 80px;
         align-items: center;
     }
 
-    .review-text {
+    .customer-rewiews-review-text {
         margin-top: 32px;
         margin-bottom: 0px;
         padding: 35px 39px;
@@ -47,7 +47,7 @@
         text-align: center;
     }
 
-    .cusomer-name {
+    .customer-rewiews-cusomer-name {
         padding-top: 0px;
         padding-bottom: 0px;
         margin-top: 32px;
@@ -60,24 +60,24 @@
         color: #131313;
     }
 
-    span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    span.customer-rewiews-swiper-pagination-bullet.swiper-pagination-bullet-active {
         background-color: #84A178;
     }
 
 
     @media screen and (min-width: 1200px) {
 
-        .review-text {
+        .customer-rewiews-review-text {
             padding: 43px 109px;
             width: 750px;
             max-height: 52px;
         }
 
-        .review {
+        .customer-rewiews-review {
             padding-top: 100px;
         }
 
-        .cusomer-name {
+        .customer-rewiews-cusomer-name {
             margin-bottom: 50px;
         }
     }
