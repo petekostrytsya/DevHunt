@@ -132,6 +132,23 @@
     }
 }
 
+.modal-btn-location :hover {
+    background-color:  #0A8817;
+
+}
+
+.modal-btn-location :active {
+    background-color: #0A8817;
+    color: #FFFFFF;
+
+}
+
+.modal-btn-location :disabled {
+    background-color: #ABABAB;
+
+}
+
+
 .modal-map {
  display: flex;
  justify-content: center;
