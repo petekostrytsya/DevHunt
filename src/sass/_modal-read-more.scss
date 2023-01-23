@@ -150,6 +150,8 @@
 }
 
 .video {
+    display: flex;
+    justify-content: center;
     width: 224px;
     height: 199px;
     margin-bottom: 20px; }
@@ -159,7 +161,7 @@
     width: 448px;
     height: 205px;
     margin-bottom: 32px;
-        }
+    }
 }
 
 
