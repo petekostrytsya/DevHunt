@@ -1,9 +1,9 @@
 p {
   margin: 0;
 }
-.footer-body {
-  background-color: #84a178;
-}
+// .footer-body {
+//   background-color: #84a178;
+// }
 .footer-title-first {
   font-family: var(--primary-font);
   font-style: normal;
@@ -75,6 +75,7 @@ p {
   justify-content: flex-end;
   gap: 20px;
   margin-bottom: 20px;
+
   @media screen and (min-width: 768px) {
     margin-bottom: 34px;
     gap: 30px;

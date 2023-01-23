@@ -1,8 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 .hero-list {
   display: flex;
   list-style: none;
@@ -10,12 +5,7 @@
   margin: 0px;
 }
 
-.hero {
-  min-width: 480px;
-  padding-top: 40px;
-}
-
-.container {
+.hero-container {
   width: 480px;
   padding-left: 20px;
   padding-right: 20px;
@@ -54,7 +44,7 @@ h1 span {
   font-weight: 600;
   font-size: 12px;
   line-height: 15px;
-  color: #000000;
+  color: #131313;
   background-color: transparent;
   text-decoration: none;
 }
@@ -174,7 +164,7 @@ h1 span {
 /* ============TABLET========== */
 
 @media screen and (min-width: 768px) {
-  .container {
+  .hero-container {
     width: 768px;
     padding: 0 32px;
     padding-bottom: 52px;
@@ -215,7 +205,7 @@ h1 span {
 
   .hero-ice-cream {
     width: 268px;
-    height: 329px;
+    height: 100%;
     bottom: 0px;
     right: 92px;
   }
@@ -272,14 +262,14 @@ h1 span {
 /*================ DESKTOP =================*/
 
 @media screen and (min-width: 1200px) {
-  .container {
+  .hero-container {
     width: 1200px;
     padding: 0 16px;
     padding-bottom: 143px;
   }
 
   .hero {
-    padding-top: 45px;
+    padding-top: 41px;
   }
 
   .hero h1,
@@ -349,7 +339,7 @@ h1 span {
     bottom: 0px;
     right: 92px;
     width: 456px;
-    height: 560px;
+    height: 100%;
   }
 
   .hero-info {
