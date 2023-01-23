@@ -22,73 +22,121 @@
 
       <h1 class="modal-title modal-buy-now">Buy now</h1>
       <section class="modal-products">
-        <input
-          type="checkbox"
-          name="product1"
-          id="modal-product1"
-          class="send-form-checkbox"
-        />
-        <label for="modal-product1" class="modal-products-form-label-check">
-          <div class="modal-product1">
-            <div class="modal-img-container">
-              <img
-                class="modal-img-product modal-product"
-                src="./images/Product1.jpg"
-                alt="Acecream"
+        <ul class="modal-products-list">
+          <li class="modal-products-item">
+            <input
+              type="checkbox"
+              name="modal-name-product1"
+              id="modal-product1"
+              class="send-form-checkbox"
+            />
+            <!-- visually-hidden -->
+            <label
+              for="modal-product1"
+              class="modal-products-form-label-check"
+            >
+              <div class="modal-product-1">
+                <div class="modal-img-container">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/modal-ice-cream.webp    1x,
+                        ./images/modal-ice-cream@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/modal-ice-cream.png    1x,
+                        ./images/modal-ice-cream@2x.png 2x
+                      "
+                    />
+                    <img
+                      class="modal-img-product modal-product"
+                      src="./images/modal-ice-cream.png"
+                      alt="Acecream"
+                    />
+                  </picture>
+                </div>
+                <p class="modal-product-name">ice cream</p>
+              </div>
+            </label>
+          </li>
+          <li class="modal-products-item">
+            <input
+                type="checkbox"
+                name="modal-name-product2"
+                id="modal-product2"
+                class="send-form-checkbox"
               />
-            </div>
-            <p class="modal-product-name">ice cream</p>
-          </div>
-        </label>
-
-        <input
-          type="checkbox"
-          name="product2"
-          id="modal-product2"
-          class="send-form-checkbox"
-        />
-        <label for="modal-product2" class="modal-products-form-label-check">
-          <div class="modal-product2">
-            <div class=".modal-img-container modal-product">
-              <img
-                class="modal-img-product"
-                src="./images/Product1.jpg"
-                alt="Acecream"
-              />
-            </div>
-            <p class="modal-product-name">ice coffee</p>
-          </div>
-        </label>
-        <!-- class="send-form-checkbox visually-hidden" -->
-        <input
-          type="checkbox"
-          name="product3"
-          id="modal-product3"
-          class="send-form-checkbox"
-        />
-        <label for="modal-product3" class="modal-products-form-label-check">
-          <div class="modal-product3">
-            <div class="modal-img-container modal-product">
-              <img
-                class="modal-img-product"
-                src="./images/Product1.jpg"
-                alt="Acecream"
-              />
-            </div>
-            <p class="modal-product-name">milkshake</p>
-          </div>
-        </label>
+              <label for="modal-product2" class="modal-products-form-label-check">
+              <div class="modal-product-2">
+                <div class="modal-img-container">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/modal-product2.webp    1x,
+                        ./images/modal-product2@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/modal-product2.png    1x,
+                        ./images/modal-product2@2x.png 2x
+                      "
+                    />
+                    <img
+                      class="modal-img-product modal-product"
+                      src="./images/modal-product2.png"
+                      alt="Ace coffee"
+                    />
+                  </picture>
+                </div>
+                <p class="modal-product-name">ice cream</p>
+              </div>
+            </label>
+          </li>
+          <li class="modal-products-item">
+            <input
+              type="checkbox"
+              name="modal-name-product3"
+              id="modal-product3"
+              class="send-form-checkbox"
+            />
+            <label
+              for="modal-product3"
+              class="modal-products-form-label-check"
+            >
+              <div class="modal-product-3">
+                <div class="modal-img-container">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/modal-product3.webp    1x,
+                        ./images/modal-product3@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/modal-product3.png    1x,
+                        ./images/modal-product3@2x.png 2x
+                      "
+                    />
+                    <img
+                      class="modal-img-product modal-product"
+                      src="./images/modal-product3.png"
+                      alt="Milkshake"
+                    />
+                  </picture>
+                </div>
+                <p class="modal-product-name">ice cream</p>
+              </div>
+            </label>
+          </li>
+        </ul>
       </section>
-
-      <!-- <input
-            id="privacy-policy"
-            type="checkbox"
-            name="user_police"
-            class="send-form-checkbox visually-hidden"
-          >
-          <label for="privacy-policy" class="send-form-label-check">
-            I accept the terms and conditions of the&nbsp;<a href="#" class="privacy-policy-link">Privacy Policy</a>
-          </label> -->
 
       <!-- Form modal -->
       <h2 class="visually-hidden">Order form</h2>
