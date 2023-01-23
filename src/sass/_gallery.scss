@@ -11,6 +11,17 @@
         margin: -1px;
     }
 
+        .gallery{
+        background-image: url("./images/background/mob-bg-@1x-581.jpg");
+        min-Width: 320px;
+        min-Height: 1037px;
+        margin-left: auto;
+        margin-right: auto;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
     .swiper {
         width: 100%;
         height: 100%;
@@ -20,6 +31,7 @@
         text-align: center;
         font-size: 18px;
         background: rgba(0, 0, 0, 0);
+        border-radius: 24px;
 
 
         /* Center slide text vertically */
@@ -72,3 +84,27 @@
             padding-top: 80px;
         }
     }
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    .gallery {
+        background-image: url("./images/background/mob-bg-@2x-1770.jpg");
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    .gallery {
+        background-image: url("./images/background/tab-bg-@2x-1926.jpg");
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+screen and (min-resolution: 192dpi) and (min-width: 1200px),
+screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    .gallery {
+        background-image: url("./images/background/desk-bg-@2x-2600.jpg");
+    }
+}
