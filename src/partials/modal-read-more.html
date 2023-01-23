@@ -1,21 +1,30 @@
 <section>
   <div class="container">
-    <div class="modal-read" data-modal>
-      <button class="modal-btn-read" data-modal-close type="button">
-        <svg class="modal-icon-close" width="24" height="24">
-          <use href="./images/sprite.svg#icon-close-line"></use>
-        </svg>
-      </button>
-      <h2 class="modal-read-title">How it’s made?</h2>
-      <video class="video" poster="#" width="224" controls>
-        <source src="#" type="video/webm" />
-        <source src="#" type="video/mp4" />
-      </video>
-      <p class="modal-read-p">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-      </p>
+    <div class="overlay js-overlay-modal" data-modal>
+      <div class="modal-read">
+        <button class="modal-btn-read" data-modal-close type="button">
+          <svg class="modal-icon-close" width="24" height="24">
+            <use href="./images/sprite.svg#icon-close-line"></use>
+          </svg>
+        </button>
+        <h2 class="modal-read-title">How it’s made?</h2>
+        <iframe
+          width="224"
+          height="199"
+          src="https://www.youtube.com/embed/qi99fZPH3oY"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+
+        <p class="modal-read-p">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et
+        </p>
+      </div>
     </div>
   </div>
 </section>
