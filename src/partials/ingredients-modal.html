@@ -1,0 +1,104 @@
+<!--Modal ingredients-->
+<div class="modal-ingredients">
+  <button class="close-btn-ing">
+    <svg class="svg-ing">
+      <use href="./images/sprite.svg#icon-close-line"></use>
+    </svg>
+  </button>
+
+  <h2>Chololate icecream</h2>
+  <div class="circle-ing"></div>
+  <ul class="value-list-ing">
+    <li class="value-item-ing">
+      <div class="value-elipse-ing">
+        <div class="value-circle-ing"><p>320</p></div>
+        <p class="value-ing">kcal</p>
+      </div>
+    </li>
+    <li class="value-item-ing">
+      <div class="value-elipse-ing">
+        <div class="value-circle-ing"><p>4g</p></div>
+        <p class="value-ing">Protein...</p>
+      </div>
+    </li>
+    <li class="value-item-ing">
+      <div class="value-elipse-ing">
+        <div class="value-circle-ing"><p>8,2g</p></div>
+        <p class="value-ing">Fats</p>
+      </div>
+    </li>
+    <li class="value-item-ing">
+      <div class="value-elipse-ing">
+        <div class="value-circle-ing"><p>40,4g</p></div>
+        <p class="value-ing">Carbs</p>
+      </div>
+    </li>
+  </ul>
+  <h3 class="ingredients-title">Ingredients</h3>
+
+  <!-- Table -->
+  <table class="ingredients">
+    <tr class="ingredient">
+      <td class="left-column-ing">Milk</td>
+      <td class="right-column-ing">100ml</td>
+    </tr>
+    <tr class="ingredient">
+      <td class="left-column-ing">Belgian chocolate</td>
+      <td class="right-column-ing">20g</td>
+    </tr>
+    <tr class="ingredient">
+      <td class="left-column-ing">Cream</td>
+      <td class="right-column-ing">150 ml</td>
+    </tr>
+    <tr class="ingredient">
+      <td class="left-column-ing">Cocoa powder</td>
+      <td class="right-column-ing">30g</td>
+    </tr>
+    <tr class="ingredient">
+      <td class="left-column-ing">Sugar</td>
+      <td class="right-column-ing">40g</td>
+    </tr>
+    <tr class="ingredient">
+      <td class="left-column-ing">Vanilla sugar</td>
+      <td class="right-column-ing">10g</td>
+    </tr>
+  </table>
+
+  <!-- FORM -->
+  <form action="" class="ingredients-form" autocomplete="off">
+    <div class="ingredients-form-input">
+      <input
+        class="ingredients-form-field"
+        type="name"
+        name="name"
+        id="name"
+        placeholder=" "
+      />
+      <label for="name" class="ingredients-form-label">Name</label>
+    </div>
+
+    <div class="ingredients-form-input">
+      <input
+        class="ingredients-form-field"
+        type="phone"
+        name="phone"
+        id="phone"
+        placeholder=" "
+      />
+      <label for="phone" class="ingredients-form-label">Phone</label>
+    </div>
+
+    <div class="ingredients-form-input comment-ing" height="84">
+      <textarea
+        class="ingredients-form-field textarea-ing"
+        name="comment"
+        id="comment"
+        cols="30"
+        rows="3"
+        placeholder=" "
+      ></textarea>
+      <label for="comment" class="ingredients-form-label">Comment</label>
+    </div>
+    <button type="submit" class="ingredients-modal-btn">Send</button>
+  </form>
+</div>
