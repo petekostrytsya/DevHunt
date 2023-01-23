@@ -128,3 +128,34 @@
   color: #131313;
   margin-bottom: 24px;
 }
+
+.btn-franchise {
+    font-family: var(--primary-font);
+    padding: 12px 34px;
+    color: #131313;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.2;
+    text-align: center;
+    background-color: #F8D24E;
+    border: none;
+     border-radius: 10px;
+    line-height: 1.2;
+}
+  
+  
+@media screen and (min-width: 1200px) {
+  .btn-franchise:hover {
+     background-color: #0A8817;
+}
+  
+.btn-franchise:active {
+ background-color: #0A8817;
+  color: #FFFFFF;
+  
+}
+  
+.btn-franchise:disabled {
+  background-color: #ABABAB;
+}
+}
