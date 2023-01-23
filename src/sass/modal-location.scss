@@ -132,21 +132,7 @@
     }
 }
 
-.modal-btn-location :hover {
-    background-color:  #0A8817;
 
-}
-
-.modal-btn-location :active {
-    background-color: #0A8817;
-    color: #FFFFFF;
-
-}
-
-.modal-btn-location :disabled {
-    background-color: #ABABAB;
-
-}
 
 
 .modal-map {
@@ -181,9 +167,28 @@ background-color: #F8D24E;
 border: none;
 border-radius: 10px;
 line-height: 1.2;
-display: inline-block;
-margin-left: auto;
-margin-right: auto;
-
 }
 
+
+@media screen and (min-width: 1200px) {
+.btn-location:hover {
+    background-color: #0A8817;
+}
+    
+.btn-location:active {
+    background-color: #0A8817;
+    color: #FFFFFF;
+    
+}
+    
+.btn-location:disabled {
+    background-color: #ABABAB; 
+}
+}
+
+
+.form-location {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
