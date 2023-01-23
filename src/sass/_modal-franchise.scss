@@ -116,6 +116,15 @@
 
   color: #131313;
   margin-bottom: 20px;
+
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 24px;
+    margin-right: 123px;
+    margin-left: 123px;
+    }
 }
 
 .modal-franchise-text {
@@ -224,7 +233,8 @@
   .modal-form-textarea {
     width: 368px;
     height: 84px;
-    margin-right: auto;
-    margin-left: auto;
+    margin-bottom: 32px;
+   
+   
   }
 }
