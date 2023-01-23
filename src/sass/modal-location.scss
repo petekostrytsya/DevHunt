@@ -101,27 +101,6 @@
     }
 }
 
-.modal-location-p {
-    color: #131313;
-    font-family: var(--primary-font);
-    line-height: 1.4;
-    font-weight: 400;
-    letter-spacing: 0.03em;
-    margin: 0;
-}
-
-@media screen and (max-width: 767px) {
-    .modal-location-p {
-        font-size: 14px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .modal-location-p {
-        font-size: 16px;
-
-    }
-}
 
 .modal-btn-location {
     position: absolute;
@@ -149,11 +128,9 @@
     }
 }
 
-@media screen and (min-width: 768px) {
-    .modal-map {
-        display: flex;
-        justify-content: center;
-    }
+.modal-map {
+ display: flex;
+ justify-content: center;
 }
 
 .map {
