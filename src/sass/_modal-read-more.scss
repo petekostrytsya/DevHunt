@@ -28,7 +28,7 @@
 
 
 /* style overlay*/
-.overlay {
+/*.overlay {
     opacity: 0;
     visibility: hidden;
 
@@ -43,7 +43,7 @@
     transition: opacity var(--transition-dur-and-timing-fun);
     -webkit-transition: opacity var(--transition-dur-and-timing-fun);
     -moz-transition: opacity var(--transition-dur-and-timing-fun);
-}
+}*/
 
 .modal-read {
     position: absolute;
@@ -72,11 +72,11 @@
 }
 }
 
-.modal.active,
+/*.modal.active,
 .overlay.active {
     opacity: 1;
     visibility: visible;
-}
+}*/
 
 .modal-read-title {
     color: #131313;
@@ -148,17 +148,19 @@
         width: 24px;
         height: 24px;
     }
-    }
+}
 
 .video {
     width: 224px;
     height: 199px;
-    margin-bottom: 20px;
+    margin-bottom: 20px; }
 
-    @media screen and (min-width: 768px) {
-            width: 448px;
-            height: 205px;
-            margin-bottom: 32px;
+@media screen and (min-width: 768px) {
+    .video {
+    width: 448px;
+    height: 205px;
+    margin-bottom: 32px;
         }
 }
+
 
