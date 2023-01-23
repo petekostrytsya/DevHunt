@@ -150,13 +150,14 @@
 }
 
 .video {
-    display: flex;
-    justify-content: center;
+    
     margin-bottom: 20px; }
 
 @media screen and (min-width: 768px) {
     .video {
-    width: 448px;
+    width: 448
+    display: flex;
+    justify-content: center;px;
     height: 205px;
     margin-bottom: 32px;
     }
