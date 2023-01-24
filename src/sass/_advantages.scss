@@ -12,10 +12,7 @@
 // }
 .advantages {
   width: 100%;
-  // padding-left: 45px;
-  // padding-right: 45px;
-  padding-bottom: 64px;
-  // background-color: #84a178;
+  padding-bottom: 68px;
 }
 
 .visibility-hidden {
@@ -55,6 +52,7 @@
 }
 
 .adv-figure-text {
+  width: 230px;
   font-family: var(--primary-font);
   font-weight: 700;
   text-align: center;
@@ -86,16 +84,8 @@
   background-image: url(../images/ice-crema.png);
 }
 
-@media screen and (max-width: 479px) {
-  .advantages {
-    padding: 0 75px;
-    padding-bottom: 65px;
-  }
-}
-
 @media screen and (max-width: 480px) {
   .advantages {
-    // padding: 0 125px;
     padding-bottom: 60px;
   }
 }
