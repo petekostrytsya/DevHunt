@@ -38,38 +38,28 @@
 .modal {
   opacity: 0;
   visibility: hidden;
-  /*  Установаем ширину окна  */
   width: 100%;
   
-  /*  Центрируем и задаем z-index */
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 530;
-  /* Должен быть выше чем у подложки*/
-
-  /*  Побочные стили   */
-  // box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2);
+  z-index: 1030;
   text-align: center;
-  // padding: 30px;
-  // border-radius: 3px;
-  // background-color: #fff;
-  // transition: 1.3s all;
+
   transition: opacity var(--transition-dur-and-timing-fun);
   -webkit-transition: opacity var(--transition-dur-and-timing-fun);
   -moz-transition: opacity var(--transition-dur-and-timing-fun);
 }
 
-/* Стили для активных классов подложки и окна */
+/* Styles for active watermark and window classes*/
 .modal.active,
 .overlay.active {
   opacity: 1;
   visibility: visible;
 }
 
-/* Стили для кнопки закрытия */
-// .modal__cross {
+/* Styles for the close button */
 .modal-close-btn {
   position: absolute;
   top: 12px;
@@ -109,17 +99,6 @@
   
 }
 
-/* Стили для кнопок. */
-.btn {
-  padding: 20px;
-  display: inline-block;
-  text-decoration: none;
-  background-color: #414b52;
-  margin: 10px;
-  color: #fff;
-  border-radius: 3px;
-}
-
 .modal.container {
   @media screen and (max-width: 767.99px) {
     max-width: 280px;
@@ -148,9 +127,7 @@
     margin-top: 32px;
   }
   
-  font-family: 'Seymour One';
-  // font-style: normal;
-  // font-weight: 400; 
+  font-family: var(--secondary-font); 
   font-size: 20px;
   line-height: 1.4;
 
@@ -162,11 +139,8 @@
   flex-direction: column;
 }
 
-
 .modal-send-form-input{
-  font-family: 'Montserrat';
-    // font-style: normal;
-    // font-weight: 400;
+  font-family: var(--primary-font);
   font-size: 14px;
   line-height: 1.4;  
   

@@ -1,25 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Seymour+One&display=swap"
-      rel="stylesheet"
-    />
-    <title>Modal ingredients</title>
-  </head>
   <body>
     <section class="modal container ingred" data-modal="1">      
+      <!-- Close button -->
       <button type="button" class="modal-close-btn js-modal-close">
           <svg class="modal-close-btn-icon">
             <use href="./images/sprite.svg#icon-close-line"></use>
           </svg>
       </button>      
 
+      <!-- Main section -->
       <h1 class="modal-title">Chololate icecream</h1>
       <section>
         <picture class="modal-product_1">
@@ -51,6 +41,7 @@
         </picture>
       </section>      
       
+      <!-- Nutritional value -->
       <h2 class="visually-hidden">Nutritional value</h2>
       <ul class="modal-nutritional-value-list">
         <li class="modal-nutritional-value-item">
@@ -71,6 +62,7 @@
         </li>
       </ul>
 
+      <!-- Ingredients -->
       <section class="modal-ingredients">
         <h3 class="modal-ingredients-title">Ingredients</h2>
         <ul>
@@ -140,23 +132,4 @@
     <!-- Overlay modal window -->
     <div class="overlay js-overlay-modal"></div>
   </body>
-
-  <!-- <p class="modal-notification"> -->
-
-  <!-- <div class="form_box">
-
-    <label for="user_name">Имя пользователя:</label>
-    <input type="text" class="rfield" id="user_name" required />
-
-    <label for="user_family">Фамилия пользователя</label>
-    <input type="text" class="rfield" id="user_family" required />
-
-    <label for="user_phone">Телефон пользователя:</label>
-    <input type="text" class="rfield" id="user_phone" required />
-
-    <label for="user_work">Профессия пользователя:</label>
-    <input type="text" class="rfield" id="user_work" required />
-
-    <button type="submit" id="button" class="btn_submit disabled">Submit</button>
-  </div> -->
 </html>

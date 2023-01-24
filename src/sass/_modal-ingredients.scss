@@ -16,7 +16,6 @@
 }
 
 .modal-img-container {
-  // position: relative;
   margin: auto;
   @media screen and (max-width: 767.99px) {
     margin-top: 27px;
@@ -57,8 +56,7 @@
   }
 
   align-items: center;
-  justify-content: center;
-  
+  justify-content: center;  
 }
 
 .modal-nutritional-value-item {
@@ -103,7 +101,7 @@
 }
 
 .modal-nutritional-value-unit{  
-  font-family: 'Montserrat';
+  font-family: var(--primary-font);
   @media screen and (max-width:767.99px) {
     font-size: 10px;
     line-height: 1.2;
@@ -157,6 +155,8 @@
   margin-bottom: 11px;
 }
 
+
+// Form modal
 .modal-send-form-label:not(first-child) {
   margin-top: 16px;
 }
@@ -231,7 +231,10 @@
   cursor: default;
 }
 
-.marker1:active {
+
+// Product card selection style
+.marker1:active,
+.marker1:focus {
   @media screen  and (min-width: 0){
     .modal-product_2{
       display: none;
@@ -256,7 +259,8 @@
   }
 }
 
-.marker2:active {
+.marker2:active,
+.marker1:focus {
   @media screen  and (min-width: 0){
     .modal-product_1{
       display: none;
@@ -281,7 +285,8 @@
   }
 }
 
-.marker2:active {
+.marker2:active,
+.marker1:focus {
   @media screen and (min-width: 0) {
     .modal-product_1 {
       display: none;
@@ -306,49 +311,3 @@
     }
   }
 }
-
-
-
-
-//*******************
-// .form_box .req:invalid {
-//   border: 2px solid red;
-// }
-
-// .form_box .req:valid {
-//   border: 2px solid green;
-// }
-
-// .form_box input:focus {
-//   outline: none;
-//   border-color: #07a6e6;
-// }
-
-// .form_box .btn_submit {
-//   border: none;
-//   width: 180px;
-//   text-align: center;
-//   background: #07a6e6;
-//   font-size: 13px;
-//   font-weight: bold;
-//   color: #ffffff;
-//   cursor: pointer;
-//   height: 35px;
-//   line-height: 28px;
-//   padding: 0;
-// }
-
-// .form_box .btn_submit:hover {
-//   background: #009ac2;
-// }
-
-// .form_box .btn_submit:active {
-//   box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.2);
-// }
-
-// .form_box .btn_submit.disabled,
-// .form_box .btn_submit.disabled:hover {
-//   background: #afdde6;
-//   cursor: default;
-// }
-//**************************

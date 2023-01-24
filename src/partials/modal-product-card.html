@@ -1,17 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Seymour+One&display=swap"
-      rel="stylesheet"
-    />
-    <title>Product card</title>
-  </head>
+  <!-- Product card -->
   <body>
     <div class="modal container prod-card" data-modal="2">
       <button type="button" class="modal-close-btn js-modal-close">
@@ -38,8 +27,8 @@
               <div class="modal-product-1">
                 <p class="modal-product-name">ice cream</p>
               </div>
-                <div class="modal-img-container">
-                  <picture>
+              <div class="modal-img-container">
+                <picture>
                     <source
                       srcset="
                         ./images/modal-ice-cream.webp    1x,
@@ -58,11 +47,8 @@
                       src="./images/modal-ice-cream.png"
                       alt="Acecream"
                     />
-                  </picture>
-                </div>
-              <!-- <div class="modal-product-1">
-                <p class="modal-product-name">ice cream</p>
-              </div> -->
+                </picture>
+              </div>
             </label>
           </li>
           <li class="modal-products-item">
@@ -71,11 +57,13 @@
                 name="modal-name-product2"
                 id="modal-product2"
                 class="send-form-checkbox"
-              />
-              <label for="modal-product2" class="modal-products-form-label-check">
+            />
+            <label for="modal-product2" class="modal-products-form-label-check">
               <div class="modal-product-2">
-                <div class="modal-img-container">
-                  <picture>
+                <p class="modal-product-name">ice coffee</p>
+              </div>
+              <div class="modal-img-container">
+                <picture>
                     <source
                       srcset="
                         ./images/modal-product2.webp    1x,
@@ -94,9 +82,7 @@
                       src="./images/modal-product2.png"
                       alt="Ace coffee"
                     />
-                  </picture>
-                </div>
-                <p class="modal-product-name">ice cream</p>
+                </picture>
               </div>
             </label>
           </li>
@@ -112,8 +98,10 @@
               class="modal-products-form-label-check"
             >
               <div class="modal-product-3">
-                <div class="modal-img-container">
-                  <picture>
+                <p class="modal-product-name">milkshakes</p>
+              </div>
+              <div class="modal-img-container">
+                <picture>
                     <source
                       srcset="
                         ./images/modal-product3.webp    1x,
@@ -132,9 +120,7 @@
                       src="./images/modal-product3.png"
                       alt="Milkshake"
                     />
-                  </picture>
-                </div>
-                <p class="modal-product-name">ice cream</p>
+                </picture>
               </div>
             </label>
           </li>
@@ -149,12 +135,12 @@
             <input
               type="text"
               name="user_name"
-              class="modal-send-form-input"
+              class="modal-send-form-input rfield"
               required
               pattern="^[a-zA-Zа-яА-Я]+$"
               minlength="2"
               title="Supported characters: A-Z, a-z, A-Z, А-Я, а-я]"
-              placeholder="Name"
+              placeholder="  Name"
             />
           </span>
         </label>
@@ -163,11 +149,11 @@
             <input
               type="tel"
               name="user_phone"
-              class="modal-send-form-input"
+              class="modal-send-form-input rfield"
               required
               pattern="[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}"
               title="Input format: xxx-xxx-xx-xx"
-              placeholder="Phone"
+              placeholder="  Phone"
             />
           </span>
         </label>
@@ -175,11 +161,11 @@
           <textarea
             name="user_comment"
             class="modal-send-form-textarea"
-            placeholder="Comment"
+            placeholder="  Comment"
           ></textarea>
         </label>
 
-        <button type="submit" class="modal-submit-button">Submit</button>
+        <button type="submit" class="modal-submit-button"> Submit</button>
       </form>
     </div>
 
