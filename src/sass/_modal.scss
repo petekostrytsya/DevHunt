@@ -172,14 +172,14 @@
 }
 
 
-.modal-send-form {
+.modal-franchise-form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 
-.modal-send-form-input {
+.modal-franchise-form-input {
     width: 100%;
     height: 32px;
     font-family: var(--primary-font);
@@ -194,7 +194,7 @@
 }
 
 @media screen and (min-width: 768px) {
-    .modal-send-form-input {
+    .modal-franchise-form-input {
         width: 368px;
         height: 42px;
         margin-right: auto;
