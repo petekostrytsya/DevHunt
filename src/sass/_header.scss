@@ -1,12 +1,17 @@
 /* Мобільне меню */
 @media screen and (max-width: 767px) {
         .header-main-nav {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
                 max-width: 480px;
-                position: relative;
-                height: 44px;
+                box-sizing: border-box;
+                height: 58px;
                 padding-top: 14px;
                 padding-left: 20px;
                 padding-right: 20px;
+                margin-right: auto;
+                margin-left: auto;
                 background-color: #84A178;
         }
 
@@ -18,9 +23,6 @@
         .header-logo {
                 width: 48px;
                 height: 44px;
-                position: absolute;
-                top: 14px;
-                left: 20px;
                 background-color: transparent;
                 border: none;
                 padding: 0;
@@ -36,9 +38,6 @@
         }
 
         .header-mobile-menu-open {
-                position: absolute;
-                top: 14px;
-                right: 20px;
                 fill: #FFFFFF;
                 background-color: transparent;
                 border: none;
@@ -137,6 +136,7 @@
 
         .header-button-mobile {
                 display: flex;
+                align-items: center;
                 width: 152px;
                 height: 42px;
                 padding-top: 12px;
@@ -148,7 +148,6 @@
                 background-color: #F8D24E;
                 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
                 cursor: pointer;
-                text-align: center;
                 font-family: var(--primary-font);
                 font-weight: 600;
                 font-size: 14px;
@@ -177,21 +176,24 @@
 /*Планшетне меню*/
 @media screen and (min-width: 768px) and (max-width: 1199px) {
         .header-main-nav {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
                 max-width: 768px;
-                position: relative;
-                height: 46px;
+                box-sizing: border-box;
+                height: 66px;
                 padding-top: 20px;
                 padding-left: 32px;
                 padding-right: 32px;
+                margin-left: auto;
+                margin-right: auto;
                 background-color: #84A178;
         }
 
         .header-logo {
-                position: absolute;
-                top: 20px;
-                left: 32px;
                 width: 48px;
                 height: 44px;
+                margin-right: 440px;
                 background-color: transparent;
                 border: none;
                 padding: 0;
@@ -208,23 +210,21 @@
         }
 
         .header-mobile-menu-open {
-                position: absolute;
-                top: 29px;
-                right: 216px;
                 fill: #FFFFFF;
                 background-color: transparent;
                 border: none;
                 padding: 0;
+                margin-top: 9px;
+                margin-right: 32px;
+                margin-bottom: 5px;
                 line-height: 0;
         }
 
         .header-button {
-                position: absolute;
-                top: 20px;
-                right: 32px;
                 display: flex;
                 width: 152px;
                 height: 42px;
+                margin-top: 4px;
                 padding-top: 12px;
                 padding-bottom: 12px;
                 padding-left: 36px;
@@ -232,9 +232,8 @@
                 border: transparent;
                 color: #000000;
                 background-color: #F8D24E;
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
                 cursor: pointer;
-                text-align: center;
+                align-items: center;
                 font-family: var(--primary-font);
                 font-weight: 600;
                 font-size: 14px;
@@ -360,11 +359,13 @@
         }
         .header-main-nav {
                 max-width: 1200px;
-                position: relative;
-                height: 65px;
+                box-sizing: border-box;
+                height: 73px;
                 padding-top: 8px;
                 padding-left: 16px;
                 padding-right: 16px;
+                margin-left: auto;
+                margin-right: auto;
                 background-color: #84A178;
                 display: flex;
                 align-items: center;
@@ -377,9 +378,6 @@
         .header-logo {
                 width: 60px;
                 height: 65px;
-                position: absolute;
-                top: 8px;
-                left: 16px;
                 background-color: transparent;
                 border: none;
                 padding: 0;
@@ -388,7 +386,7 @@
         .header-site-nav {
                 display: flex;
                 align-items: center;
-                margin-left: 308px;
+                margin-left: 300px;
                 margin-top: 32px;
                 margin-right: 204px;
                 margin-bottom: 13px;
@@ -425,9 +423,8 @@
                 border: transparent;
                 color: #000000;
                 background-color: #F8D24E;
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
                 cursor: pointer;
-                text-align: center;
+               align-items: center;
                 font-family: var(--primary-font);
                 font-weight: 600;
                 font-size: 14px;
