@@ -103,12 +103,12 @@
             <input
               type="text"
               name="user_name"
-              class="modal-send-form-input"
+              class="modal-send-form-input rfield"
               required
               pattern="^[a-zA-Zа-яА-Я]+$"
               minlength="2"
               title="Supported characters: A-Z, a-z, A-Z, А-Я, а-я]"
-              placeholder="Name"
+              placeholder="  Name"
             />
           </span>
         </label>
@@ -117,11 +117,11 @@
             <input
               type="tel"
               name="user_phone"
-              class="modal-send-form-input"
+              class="modal-send-form-input rfield"
               required
               pattern="[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}"
               title="Input format: xxx-xxx-xx-xx"
-              placeholder="Phone"
+              placeholder="  Phone"
             />
           </span>
         </label>
@@ -129,7 +129,7 @@
           <textarea
             name="user_comment"
             class="modal-send-form-textarea"
-            placeholder="Comment"
+            placeholder="  Comment"
           ></textarea>
         </label>
 
@@ -140,23 +140,4 @@
     <!-- Overlay modal window -->
     <div class="overlay js-overlay-modal"></div>
   </body>
-
-  <!-- <p class="modal-notification"> -->
-
-  <!-- <div class="form_box">
-
-    <label for="user_name">Имя пользователя:</label>
-    <input type="text" class="rfield" id="user_name" required />
-
-    <label for="user_family">Фамилия пользователя</label>
-    <input type="text" class="rfield" id="user_family" required />
-
-    <label for="user_phone">Телефон пользователя:</label>
-    <input type="text" class="rfield" id="user_phone" required />
-
-    <label for="user_work">Профессия пользователя:</label>
-    <input type="text" class="rfield" id="user_work" required />
-
-    <button type="submit" id="button" class="btn_submit disabled">Submit</button>
-  </div> -->
 </html>

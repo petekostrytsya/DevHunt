@@ -1,4 +1,8 @@
 
+.container{
+  padding: 0 20px;
+}
+
 .modal.container.ingred{
   @media screen and (max-width: 767.99px) {
     padding: 0 20px;
@@ -12,6 +16,8 @@
 .ingred .modal-title {
   @media screen and (max-width: 767.99px) {
     width: 145px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -163,7 +169,9 @@
 
 .modal-send-form-input,
 .modal-send-form-textarea {
-  width: 100%;
+  display: block;
+  padding: 11px 0;
+  margin-left: auto;
   @media screen and (max-width: 767.99px) {
     width: 100%;
   }
@@ -178,12 +186,10 @@
   color: #000000;
 }
 
-.modal-send-form-input{
-  height: 42px;
-}
-
 .modal-send-form-textarea {
+  display: block;
   height: 84px;
+  outline: none;
   resize: none;
   overflow: auto;
 }
@@ -307,48 +313,51 @@
   }
 }
 
+.modal-send-form-input,
+.modal-send-form-textarea {
+  font-family: 'Montserrat';
+  // font-style: normal;
+  // font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #131313;
 
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84A178;
+  border-radius: 10px;
+}
 
+.modal-send-form-input:focus,
+.modal-send-form-textarea:focus {
+  outline: none;
+  // border-color: #07a6e6;
+}
 
-//*******************
-// .form_box .req:invalid {
-//   border: 2px solid red;
-// }
+.modal-send-form-input .req:invalid {
+  border: 2px solid red;
+}
 
-// .form_box .req:valid {
-//   border: 2px solid green;
-// }
+.modal-send-form-input .req:valid {
+  border: 2px solid green;
+}
 
-// .form_box input:focus {
-//   outline: none;
-//   border-color: #07a6e6;
-// }
+input.empty_field {
+  border-width: 2px;
+  border-color: red;
+}
 
-// .form_box .btn_submit {
-//   border: none;
-//   width: 180px;
-//   text-align: center;
-//   background: #07a6e6;
-//   font-size: 13px;
-//   font-weight: bold;
-//   color: #ffffff;
-//   cursor: pointer;
-//   height: 35px;
-//   line-height: 28px;
-//   padding: 0;
-// }
+.modal-submit-button input.empty_field {
+  border-color: red;
+}
 
-// .form_box .btn_submit:hover {
-//   background: #009ac2;
-// }
+.modal-submit-button:focus-visible {
+  .modal-send-form-input:focus {
+      border-color:#0A8817;
+    }
 
-// .form_box .btn_submit:active {
-//   box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.2);
-// }
-
-// .form_box .btn_submit.disabled,
-// .form_box .btn_submit.disabled:hover {
-//   background: #afdde6;
-//   cursor: default;
-// }
-//**************************
+  @media screen and (min-width: 0){
+    .modal-send-form-input:focus {
+      border-color: red;
+    }
+  }
+}
