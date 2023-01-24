@@ -1,0 +1,155 @@
+.advantages {
+  padding-bottom: 68px;
+}
+
+.visibility-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.adv-list-cow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 28px;
+}
+
+.cow-icon {
+  fill: black;
+}
+
+.adv-figure {
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.22;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  color: #fcfcfc;
+}
+
+.adv-figure-text {
+  width: 230px;
+  font-family: var(--primary-font);
+  font-weight: 700;
+  text-align: center;
+  font-size: 12px;
+  line-height: 170%;
+  letter-spacing: 0.02em;
+  color: #fcfcfc;
+}
+
+.adv-item-cow::before {
+  content: '';
+  width: 50px;
+  height: 50px;
+  background-color: #f8d24e;
+  background-image: url(../images/weight.png);
+  background-size: contain;
+  border-radius: 50%;
+  margin-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.adv-item-cow:first-child:before {
+  background-image: url(../images/cow.png);
+}
+
+.adv-item-cow:last-child:before {
+  background-image: url(../images/ice-crema.png);
+}
+
+@media screen and (max-width: 480px) {
+  .advantages {
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages {
+    padding-bottom: 60px;
+  }
+
+  .adv-list-cow {
+    flex-wrap: nowrap;
+    gap: 80px;
+  }
+
+  .adv-figure-text {
+    width: 152px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 174%;
+  }
+
+  .adv-figure {
+    font-size: 48px;
+    margin-bottom: 12px;
+  }
+
+  .adv-item-cow::before {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages {
+    padding-bottom: 178px;
+  }
+
+  .adv-list-cow {
+    gap: 32px;
+    justify-content: space-between;
+  }
+
+  .adv-figure {
+    font-size: 58px;
+  }
+
+  .adv-figure-text {
+    width: 270px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 176%;
+  }
+
+  .adv-item-cow::before {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .adv-item-cow:first-child:before {
+    background-image: url(../images/cow@2x.png);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .adv-item-cow::before {
+    background-image: url(../images/weight@2x.png);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .adv-item-cow:last-child:before {
+    background-image: url(../images/ice-crema@2x.png);
+  }
+}
