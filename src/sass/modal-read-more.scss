@@ -1,0 +1,140 @@
+/*MODAL READ MORE*/
+
+/* style overlay*/
+/*.overlay {
+    opacity: 0;
+    visibility: hidden;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 520;
+    transition: opacity var(--transition-dur-and-timing-fun);
+    -webkit-transition: opacity var(--transition-dur-and-timing-fun);
+    -moz-transition: opacity var(--transition-dur-and-timing-fun);
+}
+
+.modal-read {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    height: auto;
+    z-index: 30;
+    background-color: #fff;
+    border: 2px solid rgba(248, 210, 78, 1);
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    .modal-read {
+        min-width: 280px;
+        padding: 28px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .modal-read {
+        width: 568px;
+        padding: 32px 60px;
+    }
+}
+
+.modal.active,
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-read-title {
+    color: #131313;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+    .modal-read-title {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .modal-read-title {
+        font-size: 20px;
+        line-height: 1.4;
+        margin-bottom: 32px;
+    }
+}
+
+.modal-read-p {
+    color: #131313;
+    font-family: var(--primary-font);
+    line-height: 1.4;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    margin: 0;
+    text-align: justify;
+}
+
+@media screen and (max-width: 767px) {
+    .modal-read-p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .modal-read-p {
+        font-size: 16px;
+
+    }
+}
+
+.modal-btn-read {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    fill: #131313;
+    cursor: pointer;
+    background-color: #fcfcfc;
+    border: 0;
+
+    @media screen and (max-width: 767px) {
+        width: 20px;
+        height: 20px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+
+.video {
+    width: 100%;
+    height: 199px;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .video {
+        width: 100%;
+        height: 205px;
+        margin-bottom: 32px;
+    }
+}*/
