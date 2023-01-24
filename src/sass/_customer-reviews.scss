@@ -12,7 +12,7 @@
     }
 
         .customer-swiper-slide {
-            flex-direction: column;
+        flex-direction: column;
         }
 
         .container-customer-rewiews{
@@ -81,10 +81,9 @@
         background-color: #84A178;
     }
 
-<<<<<<< Updated upstream
         @media screen and (min-width: 480px) {
         .review {
-                padding-top: 236px;
+                padding-top: 235px;
             }
 }
 
@@ -107,25 +106,7 @@
             .cusomer-name {
                 margin-bottom: 50px;
             }
-=======
-        @media screen and (min-width: 768px) {
-    
-          .review-text {
-            padding: 28px 80px;
-            width: 545px;
-            max-height: 81px;
-          }
-    
-          .review {
-            padding-top: 100px;
-          }
-    
-          .cusomer-name {
-            margin-bottom: 50px;
-          }
->>>>>>> Stashed changes
-        }
-
+    }
 
     @media screen and (min-width: 1200px) {
 
@@ -136,11 +117,7 @@
         }
 
         .review {
-<<<<<<< Updated upstream
             padding-top: 464px;
-=======
-            padding-top: 140px;
->>>>>>> Stashed changes
         }
 
         .cusomer-name {
