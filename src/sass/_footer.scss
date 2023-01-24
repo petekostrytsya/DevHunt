@@ -60,6 +60,7 @@ p {
   width: 34px;
   border-radius: 50%;
   background-color: #f8d24e;
+  animation: gelatine 3.9s infinite;
 }
 
 .social-icon {
@@ -69,6 +70,22 @@ p {
 .social-icon:hover,
 .social-icon:focus {
   fill: #fcfcfc;
+  animation: gelatine 1.9s infinite;
+}
+@keyframes gelatine {
+  from,
+  to {
+    transform: scale(1, 1.2);
+  }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.15);
+  }
 }
 .social-link-list {
   display: flex;
