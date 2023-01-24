@@ -1,17 +1,4 @@
-// * {
-//   margin: 0;
-//   padding: 0;
-// }
-
-// ul,
-// ol {
-//   margin-top: 0;
-//   margin-bottom: 0;
-//   padding-left: 0;
-//   list-style: none;
-// }
 .advantages {
-  width: 100%;
   padding-bottom: 68px;
 }
 
@@ -119,13 +106,12 @@
 
 @media screen and (min-width: 1200px) {
   .advantages {
-    width: 100%;
-    padding: 0 16px;
     padding-bottom: 178px;
   }
 
   .adv-list-cow {
     gap: 32px;
+    justify-content: space-between;
   }
 
   .adv-figure {
@@ -133,6 +119,7 @@
   }
 
   .adv-figure-text {
+    width: 270px;
     font-weight: 400;
     font-size: 16px;
     line-height: 176%;
