@@ -15,7 +15,7 @@
             flex-direction: column;
         }
 
-        .customer-rewiews{
+        .container-customer-rewiews{
         background-image: url("../images/background/mob-bg-@1x-581.jpg");
         min-Width: 320px;
         min-Height: 1037px;
@@ -100,7 +100,7 @@
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
 screen and (min-resolution: 192dpi) and (max-width: 767px),
 screen and (min-resolution: 2dppx) and (max-width: 767px) {
-    .customer-rewiews {
+    .container-customer-rewiews {
         background-image: url("../images/background/mob-bg-@2x-1770.jpg");
     }
 }
@@ -108,7 +108,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
 screen and (min-resolution: 192dpi) and (min-width: 768px),
 screen and (min-resolution: 2dppx) and (min-width: 768px) {
-    .customer-rewiews{
+    .container-customer-rewiews{
         background-image: url("../images/background/tab-bg-@2x-1926.jpg");
     }
 }
@@ -116,7 +116,7 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
 screen and (min-resolution: 192dpi) and (min-width: 1200px),
 screen and (min-resolution: 2dppx) and (min-width: 1200px) {
-    .customer-rewiews {
+    .container-customer-rewiews {
         background-image: url("../images/background/desk-bg-@2x-2600.jpg");
     }
 }
