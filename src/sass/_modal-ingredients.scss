@@ -199,17 +199,14 @@
   height: 84px;
   resize: none;
   overflow: auto;
-  // outline: none;
-  // border-color: #07a6e6;
 }
 
 .modal-send-form-input:focus ,
 .modal-send-form-textarea:focus,
 .modal-send-form-input:active,
 .modal-send-form-textarea:active {
-  // border: 2px solid #0A8817;
   outline: none;
-  border-color: #0A8817;
+  border-color: #F8D24E;
 }
 
 .modal-submit-button{
@@ -224,7 +221,7 @@
 
   background: #F8D24E;
   border-radius: 10px;
-  border: 0;
+  border: none;
 
   transition: background-color var(--transition-dur-and-timing-fun),
       color var(--transition-dur-and-timing-fun);
@@ -238,100 +235,112 @@
 .modal-submit-button:hover
 .modal-submit-button:focus {
   outline: none;
+  border: none;
   background-color: #0A8817;
   cursor: pointer;
 }
 
 .modal-submit-button:active {
   outline: none;
+  border: none;
   background-color: #0A8817;
   color: #FFFFFF;
 }
 
-.modal-submit-button.disabled,
-.modal-submit-button.disabled:hover {
-  background-color: #ababab;
-  color: #000000;
-  cursor: default;
+.modal-submit-button:active .modal-send-form-input:focus,
+.modal-submit-button:hover .modal-send-form-input:focus {
+  @media screen {
+    .modal-send-form-input{
+      border-color: red;
+    }
+  }
 }
 
+.modal-submit-button:hover,
+.modal-submit-button:focus {
+  outline: none;
+  border: none;
+  background-color: #0A8817;
+  cursor: pointer;
+}
+
+// .modal-submit-button:active+.modal-send-form-input:focus,
+// .modal-submit-button:hover+.modal-send-form-input:focus {
+//   @media screen {
+//     .modal-send-form-input {
+//       border-color: red;
+//     }
+//   }
+// }
+
+// .modal-submit-button.disabled,
+// .modal-submit-button.disabled:hover {
+//   background-color: #ababab;
+//   color: #000000;
+//   cursor: default;
+// }
 
 // Product card selection style
-.marker1:active,
-.marker1:focus {
-  @media screen  and (min-width: 0){
-    .modal-product_2{
-      display: none;
-    }
-    .modal-product_3{
-      display: none;
-    }
-
-    .modal-img-container.modal-ingredient{
-      background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
-      box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
-    }
-
-    .modal-value-container {
-      background: #9CBE8F;
-      border: 2px solid #9CBE8F;
-    }
-
-    .modal-nutritional-value-item { 
-      border: 2px solid #9CBE8F;
-    }
-  }
+.modal-product_1 .modal-img-container.modal-ingredient {
+  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+  box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
 }
 
-.marker2:active,
-.marker2:focus {
-  @media screen  and (min-width: 0){
-    .modal-product_1{
-      display: none;
-    }
-    .modal-product_3{
-      display: none;
-    }
-
-    .modal-img-container.modal-ingredient {
-      background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
-      box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
-    }
-
-    .modal-value-container {
-      background: #EFD478;;
-      border: 2px solid #EFD478;
-    }
-
-    .modal-nutritional-value-item{ 
-      border: 2px solid #EFD478;
-    }
-  }
+.modal-product_1 .modal-value-container {
+  background: #9CBE8F;
+  border-color: #9CBE8F;
 }
 
-.marker3:active,
-.marker3:focus {
-  @media screen and (min-width: 0) {
-    .modal-product_1 {
-      display: none;
-    }
+.modal-product_1 .modal-nutritional-value-item {
+  border-color: #9CBE8F;
+}
 
-    .modal-product_2 {
-      display: none;
-    }
+.modal-product_2 .modal-img-container.modal-ingredient {
+  background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+  box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+}
 
-    .modal-img-container.modal-ingredient {
-      background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
-      box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
-    }
+.modal-product_2 .modal-value-container {
+  background: #EFD478;
+  border-color: #EFD478;
+}
 
-    .modal-value-container {
-      background: #D6936D;
-      border: 2px solid #D6936D;
-    }
+.modal-product_2 .modal-nutritional-value-item {
+  border-color: #EFD478;
+}
 
-    .modal-nutritional-value-item {
-      border: 2px solid #D6936D;
-    }
-  }
+.modal-product_3 .modal-img-container.modal-ingredient {
+  background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+  box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+}
+
+.modal-product_3 .modal-value-container {
+  background: #D6936D;
+  border-color: #D6936D;
+}
+
+.modal-product_3 .modal-nutritional-value-item {
+  border-color: #D6936D;
+}
+
+
+// Validation highlight
+.modal-send-form input.empty_field {
+  border-color: red;
+}
+
+.modal-send-form .req:invalid {
+  border: 2px solid red;
+}
+
+.modal-send-form .req:valid {
+  border: 2px solid green;
+}
+
+.ingred .modal-send-form-input input:invalid:not(:placeholder-shown) {
+  border-color: red;
+}
+
+.ingred .modal-send-form-input input:valid:not(:placeholder-shown) {
+  border-color: green;
 }

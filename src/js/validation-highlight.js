@@ -1,7 +1,14 @@
+$('document').ready(function() {
+  $('#button').on('click', function() {
+    $('input[required]').addClass('req');
+  });
+});
 
+
+{/* <script type="text/javascript"> */}
   $('document').ready(function() {
     $('#button').on('click', function() {
-      $('.form_box .rfield').each(function() {
+      $('modal-send-form .rfield').each(function() {
         if ($(this).val() != '') {
           console.log(32);
           // Если поле не пустое удаляем класс-указание
@@ -14,3 +21,4 @@
       });
     });
   });
+// </script>

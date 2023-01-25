@@ -50,6 +50,8 @@
     <include src="./partials/modal-location.html"></include>
     <include src="./partials/modal-read-more.html"></include>
     <include src="./partials/modal-ingredients.html"></include>
+    <include src="./partials/modal-ingredients1.html"></include>
+    <include src="./partials/modal-ingredients2.html"></include>
     <include src="./partials/modal-product-card.html"></include>
 
     <!-- wow JS -->/
@@ -100,24 +102,8 @@
     <!-- /swiper -->
 
     <!-- modal windows -->
-    <script src="./js/modal-windows.js"></script>
-    <script type="text/javascript">
-      $('document').ready(function() {
-        $('#button').on('click', function() {
-          $('.form_box .rfield').each(function() {
-            if ($(this).val() != '') {
-              console.log(32);
-              // Если поле не пустое удаляем класс-указание
-              $(this).removeClass('empty_field');
-            } else {
-              console.log(33);
-              // Если поле пустое добавляем класс-указание
-              $(this).addClass('empty_field');
-            }
-          });
-        });
-      });
-    </script>
+    <script src="./js/modal-windows.js"></script> 
+    <script src="./js/validation-highlight.js"></script>    
     <!-- /modal windows -->
   </body>
 </html>

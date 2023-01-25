@@ -114,5 +114,28 @@
 .modal-send-form-textarea:focus,
 .modal-send-form-input:active,
 .modal-send-form-textarea:active {
-  border: 2px solid #0A8817;
+  outline: none;
+  border-color: #F8D24E;
+}
+
+
+// Validation highlight
+.modal-send-form input.empty_field {
+  border-color: red;
+}
+
+.modal-send-form .req:invalid {
+  border: 2px solid red;
+}
+
+.modal-send-form .req:valid {
+  border: 2px solid green;
+}
+
+.ingred .modal-send-form-input input:invalid:not(:placeholder-shown) {
+  border-color: red;
+}
+
+.ingred .modal-send-form-input input:valid:not(:placeholder-shown) {
+  border-color: green;
 }
