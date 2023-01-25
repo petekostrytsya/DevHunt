@@ -1,9 +1,6 @@
-// .container{
-//   padding: 0 20px;
-// }
 
-.modal.container.ingred {
-  @media screen and (max-width: 767.99px) {
+.modal.container.ingred{
+  @media screen and (max-width: 767px) {
     padding: 0 20px;
   }
 
@@ -13,7 +10,7 @@
 }
 
 .ingred .modal-title {
-  @media screen and (max-width: 767.99px) {
+  @media screen and (max-width: 767px) {
     width: 145px;
     margin-left: auto;
     margin-right: auto;
@@ -21,9 +18,8 @@
 }
 
 .modal-img-container {
-  // position: relative;
   margin: auto;
-  @media screen and (max-width: 767.99px) {
+  @media screen and (max-width: 767px) {
     margin-top: 27px;
   }
 
@@ -35,17 +31,13 @@
   border-radius: 50%;
   max-width: 132px;
   max-height: 132px;
-  background: linear-gradient(
-      0deg,
-      rgba(156, 190, 143, 0.7),
-      rgba(156, 190, 143, 0.7)
-    ),
-    #d9d9d9;
+  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7)), #D9D9D9;
   box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
 }
 
 .modal-img-product {
-  position: relative;
+  position:relative;
   top: -7px;
   left: 0;
   border-radius: 50%;
@@ -53,8 +45,10 @@
 
 .modal-nutritional-value-list {
   display: flex;
-  @media screen and (max-width: 767.99px) {
-    flex-wrap: wrap;
+  @media screen and (max-width: 390px) {
+      flex-wrap: wrap;      
+    }
+  @media screen and (max-width: 767px) {
     row-gap: 9px;
     margin-top: 22px;
     column-gap: 9px;
@@ -66,73 +60,75 @@
   }
 
   align-items: center;
-  justify-content: center;
+  justify-content: center;  
 }
 
 .modal-nutritional-value-item {
-  @media screen and (max-width: 767.99px) {
+  @media screen and (max-width: 767px) {
     width: 53px;
     padding-bottom: 8px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width:768px) {
     width: 65px;
     padding-bottom: 14px;
   }
 
-  border: 2px solid #9cbe8f;
+  border: 2px solid #9CBE8F;
   border-radius: 40px;
 }
 
 .modal-value-container {
-  display: inline-flex;
+  display:inline-flex;
   align-items: center;
   text-align: center;
   justify-content: center;
 
-  @media screen and (max-width: 767.99px) {
+  @media screen and (max-width:767.99px) {
     width: 43px;
     height: 43px;
     font-size: 10px;
     line-height: 2.8;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width:768px) {
     width: 53px;
     height: 53px;
     font-size: 12px;
     line-height: 2.33;
   }
 
-  background: #9cbe8f;
-  border: 2px solid #9cbe8f;
+  background: #9CBE8F;
+  border: 2px solid #9CBE8F;
   border-radius: 50%;
   box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
 }
 
-.modal-nutritional-value-unit {
-  font-family: 'Montserrat';
-  @media screen and (max-width: 767.99px) {
+.modal-nutritional-value-unit{  
+  font-family: var(--primary-font);
+  @media screen and (max-width:767.99px) {
     font-size: 10px;
     line-height: 1.2;
     margin: 8px auto 0 auto;
   }
-
-  @media screen and (min-width: 768px) {
+  
+  @media screen and (min-width:768px) {
     font-size: 12px;
     line-height: 1.25;
     margin: 7px auto 0 auto;
   }
-
+  
   color: #131313;
 }
 
 .modal-ingredients {
-  @media screen and (max-width: 767.99px) {
+  @media screen and (max-width:767.99px) {
     margin: 40px auto;
+    padding-left: 12px;
+    padding-right: 12px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width:768px) {
     margin: 48px auto;
   }
 }
@@ -142,18 +138,18 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 1.4;
-
+  
   color: #131313;
 }
 
-.modal-ingredients-item {
+.modal-ingredients-item{
   display: flex;
   justify-content: space-between;
   // font-family: 'Montserrat';
   font-size: 14px;
   line-height: 1.76;
   letter-spacing: 0.04em;
-
+  
   color: #131313;
 }
 
@@ -161,20 +157,20 @@
   margin-top: 24px;
 }
 
-.modal-ingredients-item:not(last-child) {
+.modal-ingredients-item:not(last-child){
   margin-bottom: 11px;
 }
 
+
+// Form modal
 .modal-send-form-label:not(first-child) {
   margin-top: 16px;
 }
 
 .modal-send-form-input,
 .modal-send-form-textarea {
-  display: block;
-  padding: 11px 0;
-  margin-left: auto;
-  @media screen and (max-width: 767.99px) {
+  width: 100%;
+  @media screen and (max-width: 767px) {
     width: 100%;
   }
 
@@ -188,192 +184,134 @@
   color: #000000;
 }
 
+.modal-send-form-input,
 .modal-send-form-textarea {
-  display: block;
+  @media screen and (max-width: 767px) {
+    padding: 8px 12px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 11px 16px;
+  }
+}
+
+.modal-send-form-textarea {
   height: 84px;
-  outline: none;
   resize: none;
   overflow: auto;
 }
 
-.modal-submit-button {
+.modal-send-form-input:focus ,
+.modal-send-form-textarea:focus,
+.modal-send-form-input:active,
+.modal-send-form-textarea:active {
+  outline: none;
+  border-color: #F8D24E;
+}
+
+.modal-submit-button{
   margin: 24px auto 28px auto;
   width: 132px;
   height: 42px;
-
   // font-family: 'Montserrat';
-  // font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.2143;
   color: #131313;
 
-  background: #f8d24e;
+  background: #F8D24E;
   border-radius: 10px;
-  border: 0;
+  border: none;
 
   transition: background-color var(--transition-dur-and-timing-fun),
-    color var(--transition-dur-and-timing-fun);
+      color var(--transition-dur-and-timing-fun);
   -webkit-transition: background-color var(--transition-dur-and-timing-fun),
-    color var(--transition-dur-and-timing-fun);
+      color var(--transition-dur-and-timing-fun);
   -moz-transition: background-color var(--transition-dur-and-timing-fun),
-    color var(--transition-dur-and-timing-fun);
+      color var(--transition-dur-and-timing-fun);
+  
 }
 
-.modal-submit-button:hover {
-  background-color: #0a8817;
+.modal-submit-button:hover
+.modal-submit-button:focus {
+  outline: none;
+  border: none;
+  background-color: #0A8817;
   cursor: pointer;
 }
 
 .modal-submit-button:active {
-  background-color: #0a8817;
-  border: 0;
-  color: #ffffff;
-}
-
-.modal-submit-button.disabled,
-.modal-submit-button.disabled:hover {
-  background-color: #ababab;
-  color: #000000;
-  cursor: default;
-}
-
-.marker1:active {
-  @media screen and (min-width: 0) {
-    .modal-product_2 {
-      display: none;
-    }
-    .modal-product_3 {
-      display: none;
-    }
-
-    .modal-img-container.modal-ingredient {
-      background: linear-gradient(
-          0deg,
-          rgba(156, 190, 143, 0.7),
-          rgba(156, 190, 143, 0.7)
-        ),
-        #d9d9d9;
-      box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
-    }
-
-    .modal-value-container {
-      background: #9cbe8f;
-      border: 2px solid #9cbe8f;
-    }
-
-    .modal-nutritional-value-item {
-      border: 2px solid #9cbe8f;
-    }
-  }
-}
-
-.marker2:active {
-  @media screen and (min-width: 0) {
-    .modal-product_1 {
-      display: none;
-    }
-    .modal-product_3 {
-      display: none;
-    }
-
-    .modal-img-container.modal-ingredient {
-      background: linear-gradient(
-          0deg,
-          rgba(248, 210, 78, 0.7),
-          rgba(248, 210, 78, 0.7)
-        ),
-        #d9d9d9;
-      box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
-    }
-
-    .modal-value-container {
-      background: #efd478;
-      border: 2px solid #efd478;
-    }
-
-    .modal-nutritional-value-item {
-      border: 2px solid #efd478;
-    }
-  }
-}
-
-.marker2:active {
-  @media screen and (min-width: 0) {
-    .modal-product_1 {
-      display: none;
-    }
-
-    .modal-product_2 {
-      display: none;
-    }
-
-    .modal-img-container.modal-ingredient {
-      background: linear-gradient(
-          0deg,
-          rgba(213, 117, 63, 0.7),
-          rgba(213, 117, 63, 0.7)
-        ),
-        #d9d9d9;
-      box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
-    }
-
-    .modal-value-container {
-      background: #d6936d;
-      border: 2px solid #d6936d;
-    }
-
-    .modal-nutritional-value-item {
-      border: 2px solid #d6936d;
-    }
-  }
-}
-
-.modal-send-form-input,
-.modal-send-form-textarea {
-  font-family: 'Montserrat';
-  // font-style: normal;
-  // font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4;
-  color: #131313;
-
-  background: rgba(248, 210, 78, 0.1);
-  border: 1px solid #84a178;
-  border-radius: 10px;
-}
-
-.modal-send-form-input:focus,
-.modal-send-form-textarea:focus {
   outline: none;
-  // border-color: #07a6e6;
+  border: none;
+  background-color: #0A8817;
+  color: #FFFFFF;
 }
 
-.modal-send-form-input .req:invalid {
-  border: 2px solid red;
-}
-
-.modal-send-form-input .req:valid {
-  border: 2px solid green;
-}
-
-input.empty_field {
-  border-width: 2px;
-  border-color: red;
-}
-
-.modal-submit-button input.empty_field {
-  border-color: red;
-}
-
-.modal-submit-button:focus-visible {
-  .modal-send-form-input:focus {
-    border-color: #0a8817;
-  }
-
-  @media screen and (min-width: 0) {
-    .modal-send-form-input:focus {
+.modal-submit-button:active .modal-send-form-input:focus,
+.modal-submit-button:hover .modal-send-form-input:focus {
+  @media screen {
+    .modal-send-form-input{
       border-color: red;
     }
   }
+}
+
+.modal-submit-button:hover,
+.modal-submit-button:focus {
+  outline: none;
+  border: none;
+  background-color: #0A8817;
+  cursor: pointer;
+}
+
+// Product card selection style
+.modal-product_1 .modal-img-container.modal-ingredient {
+  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+  box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
+}
+
+.modal-product_1 .modal-value-container {
+  background: #9CBE8F;
+  border-color: #9CBE8F;
+}
+
+.modal-product_1 .modal-nutritional-value-item {
+  border-color: #9CBE8F;
+}
+
+.modal-product_2 .modal-img-container.modal-ingredient {
+  background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+  box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+}
+
+.modal-product_2 .modal-value-container {
+  background: #EFD478;
+  border-color: #EFD478;
+}
+
+.modal-product_2 .modal-nutritional-value-item {
+  border-color: #EFD478;
+}
+
+.modal-product_3 .modal-img-container.modal-ingredient {
+  background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+  box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+}
+
+.modal-product_3 .modal-value-container {
+  background: #D6936D;
+  border-color: #D6936D;
+}
+
+.modal-product_3 .modal-nutritional-value-item {
+  border-color: #D6936D;
+}
+
+
+// Validation highlight
+.modal-send-form-input input:required:valid {
+  border-color: green;
+}
+.modal-send-form-input input:required:invalid {
+  border-color: red;
 }

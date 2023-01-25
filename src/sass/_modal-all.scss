@@ -24,10 +24,8 @@
   position: fixed;
   top: 0;
   left: 0;
-
   width: 100%;
   height: 100%;
-
   background-color: rgba(0, 0, 0, .5);
   z-index: 520;
   
@@ -41,29 +39,27 @@
   opacity: 0;
   visibility: hidden;
   width: 100%;
-
+  
   position: fixed;
   top: 50%;
   left: 50%;
-
   transform: translate(-50%, -50%);
-  z-index: 530;
-  
+  z-index: 1030;
   text-align: center;
+
   transition: opacity var(--transition-dur-and-timing-fun);
   -webkit-transition: opacity var(--transition-dur-and-timing-fun);
   -moz-transition: opacity var(--transition-dur-and-timing-fun);
 }
 
-/* Стили для активных классов подложки и окна */
+/* Styles for active watermark and window classes*/
 .modal.active,
 .overlay.active {
   opacity: 1;
   visibility: visible;
 }
 
-/* Стили для кнопки закрытия */
-// .modal__cross {
+/* Styles for the close button */
 .modal-close-btn {
   position: absolute;
   top: 12px;
@@ -79,7 +75,7 @@
   background-color: #fcfcfc;
   border: 0;
 
-  @media screen and (max-width: 767.99px) {
+  @media screen and (max-width: 767px) {
     width: 20px;
     height: 20px;
   }
@@ -91,7 +87,7 @@
 }
 
 .modal-close-btn-icon{
-  @media screen and (max-width: 767.99px) {
+  @media screen and (max-width: 767px) {
     width: 11px;
     height: 11px;
   }
@@ -103,19 +99,8 @@
   
 }
 
-/* Стили для кнопок. */
-.btn {
-  padding: 20px;
-  display: inline-block;
-  text-decoration: none;
-  background-color: #414b52;
-  margin: 10px;
-  color: #fff;
-  border-radius: 3px;
-}
-
 .modal.container {
-  @media screen and (max-width: 767.99px) {
+  @media screen and (max-width: 767px) {
     max-width: 280px;
   }
 
@@ -134,7 +119,7 @@
   text-align: center;
   justify-content: center;
 
-  @media screen and (max-width: 767.99px) {
+  @media screen and (max-width: 767px) {
     margin-top: 28px;
   }
   
@@ -142,9 +127,7 @@
     margin-top: 32px;
   }
   
-  font-family: 'Seymour One';
-  // font-style: normal;
-  // font-weight: 400; 
+  font-family: var(--secondary-font); 
   font-size: 20px;
   line-height: 1.4;
 
@@ -156,16 +139,18 @@
   flex-direction: column;
 }
 
-.modal-send-form-input,
-.modal-send-form-textarea {
-  font-family: 'Montserrat';
-    // font-style: normal;
-    // font-weight: 400;
+.modal-send-form-input{
+  font-family: var(--primary-font);
   font-size: 14px;
-  line-height: 1.4;   
+  line-height: 1.4;  
+  
   color: #131313;
-
-  background: rgba(248, 210, 78, 0.1);
-  border: 1px solid #84A178;
-  border-radius: 10px;
 }
+
+input:valid:not(:placeholder-shown) {
+    border-color: green;
+  }
+
+input:invalid:not(:placeholder-shown) {
+    border-color: red;
+  }
