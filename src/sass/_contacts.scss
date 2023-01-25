@@ -188,7 +188,7 @@
     justify-content: center;
   }
   .info-contacts {
-    flex-basis: calc(100% / 3 - 32px);
+    flex-basis: calc((100% - 32px) / 3);
   }
   .info-contacts:not(:last-child) {
     margin-right: 16px;

@@ -33,11 +33,11 @@ img {
 }
 
 .container {
-  width: 480px;
-  padding: 0 20px;
-  margin: 0 auto;
-  // padding-left: 15px;
-  // padding-right: 15px;
+    width: 480px;
+    padding: 0 20px;
+    margin: 0 auto;
+    // padding-left: 15px;
+    // padding-right: 15px;
 
   @media screen and (max-width: 479px) {
     width: 100%;
