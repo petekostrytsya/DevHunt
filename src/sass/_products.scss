@@ -128,7 +128,6 @@
   .products-list {
     padding-left: 81px;
     padding-right: 81px;
-    padding-bottom: 60px;
   }
   .products-list-box:not(:last-child) {
     margin-bottom: 168px;
@@ -136,6 +135,7 @@
   .products {
     background-image: url(../images/background/mob-bg-@1x-885.jpg);
     max-width: 767px;
+    padding-bottom: 60px;
   }
   .products-title {
     margin-bottom: 145px;
@@ -212,11 +212,10 @@
     background-image: url(../images/background/tab-bg-@1x-963.jpg);
     // background-position: center;
     // background-repeat: no-repeat;
-  }
-  .products-list {
     padding-bottom: 60px;
   }
 }
+
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 767px),
   screen and (min-resolution: 192dpi) and (min-width: 767px),
   screen and (min-resolution: 2dppx) and (min-width: 767px) {

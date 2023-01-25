@@ -1,9 +1,18 @@
 p {
   margin: 0;
 }
-// .footer-body {
-//   background-color: #84a178;
-// }
+.footer-body {
+  @media screen and (max-width: 767px) {
+    padding-top: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 40px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 120px;
+  }
+}
+
 .footer-title-first {
   font-family: var(--primary-font);
   font-style: normal;
@@ -11,7 +20,6 @@ p {
   font-size: 18px;
   line-height: 22px;
   text-transform: uppercase;
-  padding-top: 60px;
   margin-bottom: 16px;
   color: #fcfcfc;
   display: inline-block;
@@ -21,14 +29,12 @@ p {
     line-height: 32px;
     letter-spacing: 0.04em;
     width: 352px;
-    padding-top: 40px;
   }
   @media screen and (min-width: 1200px) {
     font-weight: 400;
     font-size: 30px;
     line-height: 37px;
     width: 504px;
-    padding-top: 120px;
   }
 }
 .footer-title-secondary {
