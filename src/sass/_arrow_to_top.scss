@@ -1,0 +1,30 @@
+@media screen and (min-width: 1200px) {
+  .arrow-to-top-image {
+    display: block;
+    width: 58px;
+    height: 58px;
+    padding: 0;
+  }
+
+  .arrow-to-top {
+    display: block;
+    padding: 5px;
+    z-index: 9999;
+    bottom: 20px;
+    right: 20px;
+    position: fixed;
+    opacity: 0.3;
+    transition: opacity 250ms linear;
+  }
+
+  .arrow-to-top:hover,
+  .arrow-to-top:focus {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .arrow-to-top-image {
+    display: none;
+  }
+}
