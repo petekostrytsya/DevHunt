@@ -159,6 +159,7 @@
 }
 
 .hero-arrow {
+  z-index: 500;
   position: absolute;
   display: none;
   fill: rgba(252, 252, 252, 1);
@@ -318,6 +319,8 @@
   }
 
   .hero-btn-products {
+    position: relative;
+    z-index: 500;
     font-size: 14px;
     line-height: 18px;
     padding: 12px 34px;
@@ -331,6 +334,8 @@
   }
 
   .hero-btn-how {
+    position: relative;
+    z-index: 600;
     font-size: 14px;
     line-height: 17px;
   }
