@@ -1,12 +1,12 @@
 .reviews {
-  padding-bottom: 393px;
+  // padding-bottom: 393px;
 
   @media screen and (min-width: 768px) {
-    padding-bottom: 379px;
+    // padding-bottom: 379px;
   }
 
   @media screen and (min-width: 1200px) {
-    padding-bottom: 228px;
+    // padding-bottom: 228px;
   }
 }
 .reviews-item {
@@ -22,7 +22,7 @@
 }
 
 .reviews-text {
-  width: 100%;
+  width: 280px;
   padding: 35px 39px;
   margin-inline: auto;
   font-size: 12px;
@@ -33,6 +33,7 @@
   border-radius: 10px;
 
   @media screen and (min-width: 768px) {
+    width: 100%;
     max-width: 705px;
     padding: 28px 80px;
     font-size: 14px;
@@ -42,6 +43,7 @@
   }
 
   @media screen and (min-width: 1200px) {
+    width: 100%;
     max-width: 968px;
     padding: 43px 109px;
     font-size: 16px;

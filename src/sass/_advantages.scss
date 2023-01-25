@@ -79,7 +79,7 @@
 
 @media screen and (min-width: 768px) {
   .advantages {
-    padding-bottom: 60px;
+    padding-bottom: 204px;
   }
 
   .adv-list-cow {
@@ -97,6 +97,7 @@
   .adv-figure {
     font-size: 48px;
     margin-bottom: 12px;
+    text-transform: none;
   }
 
   .adv-item-cow::before {
