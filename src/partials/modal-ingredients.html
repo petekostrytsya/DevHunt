@@ -1,143 +1,172 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Seymour+One&display=swap"
-      rel="stylesheet"
-    />
-    <title>Modal ingredients</title>
-  </head>
-  <body>
-    <section class="modal container ingred" data-modal="1">      
-      <button type="button" class="modal-close-btn js-modal-close">
-          <svg class="modal-close-btn-icon">
-            <use href="./images/sprite.svg#icon-close-line"></use>
-          </svg>
-      </button>      
+<div class="modal container ingred" data-modal="1">
+  <button type="button" class="modal-close-btn js-modal-close">
+    <svg class="modal-close-btn-icon">
+      <use href="./images/sprite.svg#icon-close-line"></use>
+    </svg>
+  </button>
 
-      <h1 class="modal-title">Chololate icecream</h1>
-      <section>
-        <picture class="modal-product_1">
-          <div class="modal-img-container modal-ingredient">
-            <source srcset="./images/modal-product.webp 1x, ./images/modal-product@2x.webp 2x,
-                ./images/modal-product@3x.webp 3x" media="(min-width:1200px)"
-                  type="image/webp">
-            <source srcset="./images/modal-product@2x.png 2x, ./images/modal-product@2x.png 2x" media="(min-width:1200px)" >
-            <img class="modal-img-product" src="./images/modal-product.png" alt="Chololate icecream">
-          </div>
-        </picture>
-        <picture class="modal-product_2 visually-hidden">
-          <div class="modal-img-container modal-ingredient">
-            <source srcset="./images/modal-product2.webp 1x, ./images/modal-product2@2x.webp 2x,
-                ./images/modal-product2@3x.webp 3x" media="(min-width:1200px)"
-                  type="image/webp">
-            <source srcset="./images/modal-product2@2x.png 2x,./images/modal-product2@3x.png 3x" media="(min-width:1200px)" >
-            <img class="modal-img-product" src="./images/modal-product2.png" alt="Chololate icecream">
-          </div>
-        </picture>
-        <picture class="modal-product_3 visually-hidden">
-          <div class="modal-img-container modal-ingredient">
-            <source srcset="./images/modal-product3.webp 1x, ./images/modal-product3@2x.webp 2x,
-                 ./images/modal-product3@3x.webp 3x" media="(min-width:1200px)"
-                  type="image/webp">
-            <source srcset="./images/modal-product3@2x.png 2x, ./images/modal-product3@3x.png 3x" media="(min-width:1200px)" >
-            <img class="modal-img-product" src="./images/modal-product3.png" alt="Chololate icecream">
-          </div>
-        </picture>
-      </section>      
-      
-      <h2 class="visually-hidden">Nutritional value</h2>
-      <ul class="modal-nutritional-value-list">
-        <li class="modal-nutritional-value-item">
-          <div class="modal-value-container">320</div>
-          <p class="modal-nutritional-value-unit">kcal</p>
-        </li>
-        <li class="modal-nutritional-value-item">
-          <div class="modal-value-container">4g</div>
-          <p class="modal-nutritional-value-unit">Prote...</p>
-        </li>
-        <li class="modal-nutritional-value-item">
-          <div class="modal-value-container">8,2g</div>
-          <p class="modal-nutritional-value-unit">Fats</p>
-        </li>
-        <li class="modal-nutritional-value-item">
-          <div class="modal-value-container">40,4g</div>
-          <p class="modal-nutritional-value-unit">Carbs</p>
-        </li>
-      </ul>
+  <h2 class="modal-title">Chololate icecream</h2>
+  <div>
+    <picture class="modal-product_1">
+      <div class="modal-img-container modal-ingredient">
+        <source
+          srcset="
+            ./images/modal-product.webp    1x,
+            ./images/modal-product@2x.webp 2x,
+            ./images/modal-product@3x.webp 3x
+          "
+          media="(min-width:1200px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/modal-product@2x.png 2x,
+            ./images/modal-product@2x.png 2x
+          "
+          media="(min-width:1200px)"
+        />
+        <img
+          class="modal-img-product"
+          src="./images/modal-product.png"
+          alt="Chololate icecream"
+        />
+      </div>
+    </picture>
+    <picture class="modal-product_2 visually-hidden">
+      <div class="modal-img-container modal-ingredient">
+        <source
+          srcset="
+            ./images/modal-product2.webp    1x,
+            ./images/modal-product2@2x.webp 2x,
+            ./images/modal-product2@3x.webp 3x
+          "
+          media="(min-width:1200px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/modal-product2@2x.png 2x,
+            ./images/modal-product2@3x.png 3x
+          "
+          media="(min-width:1200px)"
+        />
+        <img
+          class="modal-img-product"
+          src="./images/modal-product2.png"
+          alt="Chololate icecream"
+        />
+      </div>
+    </picture>
+    <picture class="modal-product_3 visually-hidden">
+      <div class="modal-img-container modal-ingredient">
+        <source
+          srcset="
+            ./images/modal-product3.webp    1x,
+            ./images/modal-product3@2x.webp 2x,
+            ./images/modal-product3@3x.webp 3x
+          "
+          media="(min-width:1200px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/modal-product3@2x.png 2x,
+            ./images/modal-product3@3x.png 3x
+          "
+          media="(min-width:1200px)"
+        />
+        <img
+          class="modal-img-product"
+          src="./images/modal-product3.png"
+          alt="Chololate icecream"
+        />
+      </div>
+    </picture>
+  </div>
 
-      <section class="modal-ingredients">
-        <h3 class="modal-ingredients-title">Ingredients</h2>
-        <ul>
-          <li class="modal-ingredients-item">
-            <span>Milk</span><span>100ml</span>
-          </li>
-          <li class="modal-ingredients-item">
-            <span>Belgian chocolate</span><span>20g</span>
-          </li>
-          <li class="modal-ingredients-item">
-            <span>Cream</span><span>150ml</span>
-          </li>
-          <li class="modal-ingredients-item">
-            <span>Cocoa powder</span><span>30g</span>
-          </li>
-          <li class="modal-ingredients-item">
-            <span>Sugar</span><span>40g</span>
-          </li>
-          <li class="modal-ingredients-item">
-            <span>Vanilla sugar</span><span>10g</span>
-          </li>
-        </ul>
-      </section>
+  <h2 class="visually-hidden">Nutritional value</h2>
+  <ul class="modal-nutritional-value-list">
+    <li class="modal-nutritional-value-item">
+      <div class="modal-value-container">320</div>
+      <p class="modal-nutritional-value-unit">kcal</p>
+    </li>
+    <li class="modal-nutritional-value-item">
+      <div class="modal-value-container">4g</div>
+      <p class="modal-nutritional-value-unit">Prote...</p>
+    </li>
+    <li class="modal-nutritional-value-item">
+      <div class="modal-value-container">8,2g</div>
+      <p class="modal-nutritional-value-unit">Fats</p>
+    </li>
+    <li class="modal-nutritional-value-item">
+      <div class="modal-value-container">40,4g</div>
+      <p class="modal-nutritional-value-unit">Carbs</p>
+    </li>
+  </ul>
 
-      <!-- Form modal -->
-      <h2 class="visually-hidden">Order form</h2>
-      <form class="modal-send-form">
-        <label class="modal-send-form-label">
-          <span class="modal-send-form-label-wrapper">
-            <input
-              type="text"
-              name="user_name"
-              class="modal-send-form-input rfield"
-              required
-              pattern="^[a-zA-Zа-яА-Я]+$"
-              minlength="2"
-              title="Supported characters: A-Z, a-z, A-Z, А-Я, а-я]"
-              placeholder="  Name"
-            />
-          </span>
-        </label>
-        <label class="modal-send-form-label">
-          <span class="modal-send-form-label-wrapper">
-            <input
-              type="tel"
-              name="user_phone"
-              class="modal-send-form-input rfield"
-              required
-              pattern="[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}"
-              title="Input format: xxx-xxx-xx-xx"
-              placeholder="  Phone"
-            />
-          </span>
-        </label>
-        <label class="modal-send-form-label">
-          <textarea
-            name="user_comment"
-            class="modal-send-form-textarea"
-            placeholder="  Comment"
-          ></textarea>
-        </label>
+  <div class="modal-ingredients">
+    <h3 class="modal-ingredients-title">Ingredients</h3>
+    <ul>
+      <li class="modal-ingredients-item">
+        <span>Milk</span><span>100ml</span>
+      </li>
+      <li class="modal-ingredients-item">
+        <span>Belgian chocolate</span><span>20g</span>
+      </li>
+      <li class="modal-ingredients-item">
+        <span>Cream</span><span>150ml</span>
+      </li>
+      <li class="modal-ingredients-item">
+        <span>Cocoa powder</span><span>30g</span>
+      </li>
+      <li class="modal-ingredients-item"><span>Sugar</span><span>40g</span></li>
+      <li class="modal-ingredients-item">
+        <span>Vanilla sugar</span><span>10g</span>
+      </li>
+    </ul>
+  </div>
 
-        <button type="submit" class="modal-submit-button">Submit</button>
-      </form>
-    </section>
+  <!-- Form modal -->
+  <h2 class="visually-hidden">Order form</h2>
+  <form class="modal-send-form">
+    <label class="modal-send-form-label">
+      <span class="modal-send-form-label-wrapper">
+        <input
+          type="text"
+          name="user_name"
+          class="modal-send-form-input rfield"
+          required
+          pattern="^[a-zA-Zа-яА-Я]+$"
+          minlength="2"
+          title="Supported characters: A-Z, a-z, A-Z, А-Я, а-я]"
+          placeholder="  Name"
+        />
+      </span>
+    </label>
+    <label class="modal-send-form-label">
+      <span class="modal-send-form-label-wrapper">
+        <input
+          type="tel"
+          name="user_phone"
+          class="modal-send-form-input rfield"
+          required
+          pattern="[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}"
+          title="Input format: xxx-xxx-xx-xx"
+          placeholder="  Phone"
+        />
+      </span>
+    </label>
+    <label class="modal-send-form-label">
+      <textarea
+        name="user_comment"
+        class="modal-send-form-textarea"
+        placeholder="  Comment"
+      ></textarea>
+    </label>
 
-    <!-- Overlay modal window -->
-    <div class="overlay js-overlay-modal"></div>
-  </body>
-</html>
+    <button type="submit" class="modal-submit-button">Submit</button>
+  </form>
+</div>
+
+<!-- Overlay modal window -->
+<!-- <div class="overlay js-overlay-modal"></div> -->
