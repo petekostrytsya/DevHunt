@@ -20,7 +20,9 @@ a,
 button,
 textarea,
 input,
-.header-button {
+.header-button,
+.swiper,
+.js-modal-close {
   cursor: url('../images/cursor/cursor-pointer-@1x.png'), auto;
 
   @supports (cursor: url('data:image/webp'), auto) {
