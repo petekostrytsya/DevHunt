@@ -1,80 +1,119 @@
-<section class="customer-rewiews">
-  <div class="container">
-    <h2 class="customer-rewiews-visual-hidden">customer rewiews</h2>
-    <div class="swiper mySwiper2">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide review">
-          <img
-            class="customer"
-            srcset="
-              ./images/reviews/review-1-@1x-85.jpg   85w,
-              ./images/reviews/review-1-@2x-170.jpg 170w
-            "
-            src="./images/reviews/review-1-@1x-85.jpg"
-            alt="Emily, Los Angeles"
-          />
-          <p class="review-text">
-            I love visiting your cafe. You prepare the most delicious ice cream
-            in Los Angeles! In addition, you have beautiful serving, cozy
-            atmosphere and polite staff.
-          </p>
-          <h3 class="cusomer-name">Emily, Los Angeles</h3>
-        </div>
-        <div class="swiper-slide review">
-          <img
-            class="customer"
-            srcset="
-              ./images/reviews/review-2-@1x-85.jpg   85w,
-              ./images/reviews/review-2-@2x-170.jpg 170w
-            "
-            src="./images/reviews/review-1-@1x-85.jpg"
-            alt="Bryan, New-York"
-          />
-          <p class="review-text">
-            It's freshly made ice cream. The best place to have ice cream in
-            Chicago. The quality is good and worth its price . Hope the price
-            don't increase
-          </p>
-          <h3 class="cusomer-name">Bryan, New-York</h3>
-        </div>
-        <div class="swiper-slide review">
-          <img
-            class="customer"
-            srcset="
-              ./images/reviews/review-3-@1x-85.jpg   85w,
-              ./images/reviews/review-3-@2x-170.jpg 170w
-            "
-            src="./images/reviews/review-1-@1x-85.jpg"
-            alt="Diana, Chicago"
-          />
-          <p class="review-text">
-            Ice cream is my passion! I love your chocolate hazelnut ice cream!
-            And I really like the excellent service - always served politely and
-            quickly!
-          </p>
-          <h3 class="cusomer-name">Diana, Chicago</h3>
-        </div>
-      </div>
-      <div class="swiper-pagination"></div>
-    </div>
-  </div>
-</section>
+<h2 class="visibility-hidden">Customer reviews</h2>
 
-<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-<script>
-    var swiper = new Swiper(".mySwiper2", {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        keyboard: {
-            enabled: true,
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-    });
-</script> -->
+<div class="gallery-reviews-wrapper reviews">
+  <ul class="reviews-list">
+    <div class="swiper mySwiper2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide reviews-item">
+            <li class="reviews-item">
+                <picture class="">
+                  <source
+                    media="(min-width: 320px)"
+                    srcset="
+                      ./images/reviews/review-1-@1x-85.webp  1x,
+                      ./images/reviews/review-1-@2x-170.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 320px)"
+                    srcset="
+                      ./images/reviews/review-1-@1x-85.jpg  1x,
+                      ./images/reviews/review-1-@2x-170.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    class="reviews-image"
+                    src="./images/reviews/review-1-@1x-85.jpg"
+                    alt=""
+                    width="85"
+                    height="85"
+                  />
+                </picture>
+                <p class="reviews-text">
+                  I love visiting your cafe. You prepare the most delicious ice cream in
+                  Los Angeles! In addition, you have beautiful serving, cozy atmosphere
+                  and polite staff.
+                </p>
+                <h3 class="reviews-name">Emily, Los Angeles</h3>
+              </li>
+          </div>
+          <div class="swiper-slide reviews-item">
+            <li class="reviews-item">
+                <picture>
+                  <source
+                    media="(min-width: 320px)"
+                    srcset="
+                      ./images/reviews/review-2-@1x-85.webp  1x,
+                      ./images/reviews/review-2-@2x-170.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 320px)"
+                    srcset="
+                      ./images/reviews/review-2-@1x-85.jpg  1x,
+                      ./images/reviews/review-2-@2x-170.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    class="reviews-image"
+                    src="./images/reviews/review-2-@1x-85.jpg"
+                    alt=""
+                    width="85"
+                    height="85"
+                  />
+                </picture>
+                <p class="reviews-text">
+                  Every day we come to you with friends after classes in college. We love
+                  your ice cream and casual atmosphere!
+                </p>
+                <h3 class="reviews-name">Bryan, New-York</h3>
+              </li>
+          </div>
+          <div class="swiper-slide reviews-item">
+            <li class="reviews-item">
+                <picture>
+                  <source
+                    media="(min-width: 320px)"
+                    srcset="
+                      ./images/reviews/review-3-@1x-85.webp  1x,
+                      ./images/reviews/review-3-@2x-170.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 320px)"
+                    srcset="
+                      ./images/reviews/review-3-@1x-85.jpg  1x,
+                      ./images/reviews/review-3-@2x-170.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    class="reviews-image"
+                    src="./images/reviews/review-3-@1x-85.jpg"
+                    alt=""
+                    width="85"
+                    height="85"
+                  />
+                </picture>
+                <p class="reviews-text">
+                  Ice cream is my passion! I love your chocolate hazelnut ice cream! And I
+                  really like the excellent service - always served politely and quickly!
+                </p>
+                <h3 class="reviews-name">Diana, Chicago</h3>
+              </li>
+          </div>
+          
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      
+  
+    
+    
+  </ul>
+</div>

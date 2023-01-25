@@ -318,6 +318,8 @@
   }
 
   .hero-btn-products {
+    position: relative;
+    z-index: 1000;
     font-size: 14px;
     line-height: 18px;
     padding: 12px 34px;
@@ -331,6 +333,8 @@
   }
 
   .hero-btn-how {
+    position: relative;
+    z-index: 500;
     font-size: 14px;
     line-height: 17px;
   }

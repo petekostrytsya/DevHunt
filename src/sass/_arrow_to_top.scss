@@ -1,0 +1,14 @@
+@media screen and (min-width: 1200px) {
+  .arrow-to-top-image {
+    width: 58px;
+  }
+  .arrow-to-top {
+    display: block;
+    background-color: transparent;
+    padding: 5px;
+    z-index: 9999;
+    bottom: 40px;
+    right: 40px;
+    position: fixed;
+  }
+}
