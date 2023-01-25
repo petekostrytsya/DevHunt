@@ -1,6 +1,6 @@
 
 .modal.container.ingred{
-  @media screen and (max-width: 767.99px) {
+  @media screen and (max-width: 767px) {
     padding: 0 20px;
   }
 
@@ -10,14 +10,16 @@
 }
 
 .ingred .modal-title {
-  @media screen and (max-width: 767.99px) {
+  @media screen and (max-width: 767px) {
     width: 145px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 .modal-img-container {
   margin: auto;
-  @media screen and (max-width: 767.99px) {
+  @media screen and (max-width: 767px) {
     margin-top: 27px;
   }
 
@@ -43,8 +45,10 @@
 
 .modal-nutritional-value-list {
   display: flex;
-  @media screen and (max-width: 767.99px) {
-    flex-wrap: wrap;
+  @media screen and (max-width: 390px) {
+      flex-wrap: wrap;      
+    }
+  @media screen and (max-width: 767px) {
     row-gap: 9px;
     margin-top: 22px;
     column-gap: 9px;
@@ -60,7 +64,7 @@
 }
 
 .modal-nutritional-value-item {
-  @media screen and (max-width: 767.99px) {
+  @media screen and (max-width: 767px) {
     width: 53px;
     padding-bottom: 8px;
   }
@@ -120,6 +124,8 @@
 .modal-ingredients {
   @media screen and (max-width:767.99px) {
     margin: 40px auto;
+    padding-left: 12px;
+    padding-right: 12px;
   }
 
   @media screen and (min-width:768px) {
@@ -164,7 +170,7 @@
 .modal-send-form-input,
 .modal-send-form-textarea {
   width: 100%;
-  @media screen and (max-width: 767.99px) {
+  @media screen and (max-width: 767px) {
     width: 100%;
   }
 
@@ -178,23 +184,39 @@
   color: #000000;
 }
 
-.modal-send-form-input{
-  height: 42px;
+.modal-send-form-input,
+.modal-send-form-textarea {
+  @media screen and (max-width: 767px) {
+    padding: 8px 12px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 11px 16px;
+  }
 }
 
 .modal-send-form-textarea {
   height: 84px;
   resize: none;
   overflow: auto;
+  // outline: none;
+  // border-color: #07a6e6;
+}
+
+.modal-send-form-input:focus ,
+.modal-send-form-textarea:focus,
+.modal-send-form-input:active,
+.modal-send-form-textarea:active {
+  // border: 2px solid #0A8817;
+  outline: none;
+  border-color: #0A8817;
 }
 
 .modal-submit-button{
   margin: 24px auto 28px auto;
   width: 132px;
   height: 42px;
-
   // font-family: 'Montserrat';
-    // font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.2143;
@@ -213,20 +235,22 @@
   
 }
 
-.modal-submit-button:hover {
+.modal-submit-button:hover
+.modal-submit-button:focus {
+  outline: none;
   background-color: #0A8817;
   cursor: pointer;
 }
 
 .modal-submit-button:active {
+  outline: none;
   background-color: #0A8817;
-  border: 0;
   color: #FFFFFF;
 }
 
 .modal-submit-button.disabled,
 .modal-submit-button.disabled:hover {
-  background-color: #ABABAB;
+  background-color: #ababab;
   color: #000000;
   cursor: default;
 }
@@ -260,7 +284,7 @@
 }
 
 .marker2:active,
-.marker1:focus {
+.marker2:focus {
   @media screen  and (min-width: 0){
     .modal-product_1{
       display: none;
@@ -285,8 +309,8 @@
   }
 }
 
-.marker2:active,
-.marker1:focus {
+.marker3:active,
+.marker3:focus {
   @media screen and (min-width: 0) {
     .modal-product_1 {
       display: none;

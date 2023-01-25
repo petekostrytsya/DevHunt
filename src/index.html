@@ -49,8 +49,10 @@
     <include src="./partials/modal-franchise.html"></include>
     <include src="./partials/modal-location.html"></include>
     <include src="./partials/modal-read-more.html"></include>
+    <include src="./partials/modal-ingredients.html"></include>
+    <include src="./partials/modal-product-card.html"></include>
 
-    <!-- wow JS -->
+    <!-- wow JS -->/
     <script src="./js/wow.min.js"></script>
     <script>
       new WOW().init();
@@ -99,6 +101,23 @@
 
     <!-- modal windows -->
     <script src="./js/modal-windows.js"></script>
+    <script type="text/javascript">
+      $('document').ready(function() {
+        $('#button').on('click', function() {
+          $('.form_box .rfield').each(function() {
+            if ($(this).val() != '') {
+              console.log(32);
+              // Если поле не пустое удаляем класс-указание
+              $(this).removeClass('empty_field');
+            } else {
+              console.log(33);
+              // Если поле пустое добавляем класс-указание
+              $(this).addClass('empty_field');
+            }
+          });
+        });
+      });
+    </script>
     <!-- /modal windows -->
   </body>
 </html>
