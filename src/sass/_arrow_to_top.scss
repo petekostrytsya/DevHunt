@@ -1,0 +1,14 @@
+#toTop {
+  height: 56px;
+  width: 29px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  // background-color: #aaca3c;
+  background-image: url('../images/arrow.svg');
+  padding: 5px;
+  // cursor: pointer;
+  z-index: 9999;
+  bottom: 40px;
+  right: 40px;
+  position: fixed;
+}
