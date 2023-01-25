@@ -146,3 +146,16 @@
   
   color: #131313;
 }
+
+
+.modal-send-form input.empty_field {
+  border-color: red;
+}
+
+.modal-send-form input:invalid:not(:placeholder-shown) {
+  border-color: red;
+}
+
+.modal-send-form input:valid:not(:placeholder-shown) {
+  border-color: green;
+}
