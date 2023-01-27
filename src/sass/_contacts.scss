@@ -114,6 +114,10 @@
   line-height: 150%;
   color: #131313;
 }
+.contacts-phone-mail:hover,
+.contacts-phone-mail:focus{
+  color:#0a8817;
+}
 .contacts-buttons-wrapper {
   display: flex;
   justify-content: center;
