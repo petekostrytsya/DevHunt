@@ -42,12 +42,12 @@
 /* style modal windows*/
 .modal {
   @media screen and (max-width: 767px) {
-    padding-top: 28px;
+    padding: 28px 20px;
     height: 100vh;
   }
   
   @media screen and (min-width: 768px) {
-    mapadding-top: 32px;
+    padding: 32px 40px;
   }
 
   opacity: 0;
@@ -68,17 +68,8 @@
   -moz-transition: opacity var(--transition-dur-and-timing-fun);
 }
 
-.modal .ingred { 
-@media screen and (min-width: 768px) {
-    height: 100vh;
-  }
-}
 
-.modal .prod-card{
-  height: 644px;    
-}
-
-/* Styles for active watermark and window classes*/
+/* Styles for active watermark and window classes */
 .modal.active,
 .overlay.active {
   opacity: 1;
@@ -161,14 +152,6 @@
   align-items: center;
   text-align: center;
   justify-content: center;
-
-  @media screen and (max-width: 767px) {
-    margin-top: 28px;
-  }
-  
-  @media screen and (min-width: 768px) {
-    margin-top: 32px;
-  }
   
   font-family: var(--secondary-font); 
   font-size: 20px;
