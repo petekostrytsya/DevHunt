@@ -1,7 +1,7 @@
 html {
   cursor: url('../images/cursor/cursor-auto-@1x.png'), pointer;
 
-  @supports (cursor: url('data:image/webp'), 64px 64px auto) {
+  @supports (cursor: url('data:image/webp'), pointer) {
     cursor: url('../images/cursor/cursor-auto-@1x.webp'), pointer;
   }
 
@@ -24,7 +24,7 @@ svg,
 .swiper .mySwiper1 {
   cursor: url('../images/cursor/cursor-pointer-@1x.png'), pointer;
 
-  @supports (cursor: url('data:image/webp'), auto) {
+  @supports (cursor: url('data:image/webp'), pointer) {
     cursor: url('../images/cursor/cursor-pointer-@1x.webp'), pointer;
   }
 

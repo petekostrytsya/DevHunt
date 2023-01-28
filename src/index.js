@@ -1,2 +1,2 @@
 import './js/modal.js';
-import './js/arrow_to_top';
+import './js/arrow_to_top.js';
