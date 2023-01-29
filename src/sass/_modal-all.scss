@@ -43,7 +43,7 @@
 .modal {
   @media screen and (max-width: 767px) {
     padding: 28px 20px;
-    height: 100vh;
+    height: 100%;
   }
   
   @media screen and (min-width: 768px) {
@@ -53,7 +53,7 @@
   opacity: 0;
   visibility: hidden;  
   max-height: 1050px;
-  
+  height: 100%;
   position: fixed;
   top: 50%;
   left: 50%;
