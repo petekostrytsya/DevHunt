@@ -190,3 +190,6 @@
 .swiper-pagination-bullet-active {
   background-color: #84a178;
 }
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  cursor: inherit;
+}
